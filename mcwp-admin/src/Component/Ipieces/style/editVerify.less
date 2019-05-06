@@ -1,0 +1,107 @@
+@import "../../../Assets/Style/themes/default.less";
+.editVerify-container {
+    .result-content {
+        background: url("@{img-three-level-path}/icon_prompt.png") no-repeat;
+        padding-left: 25px;
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+    .verify-table-container + .verify-table-container {
+        margin-top: 30px;
+    }
+    .verify-title {
+        background-color: #fbfbfb;
+        font-weight: bold;
+        line-height: 38px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .verify-alone {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .verify-table {
+        margin-left: 20px;
+        border-collapse: collapse;
+    }
+    .verify-head {
+        background-color: #fbfbfb;
+    }
+    .verify-head-first, .verify-table-content {
+        box-sizing: border-box;
+        border: 1px solid #cecece;
+        height: 44px;
+        line-height: 44px;
+    }
+    .verify-head-first {
+        white-space: nowrap;
+        text-align: left;
+        text-indent: 20px;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    .verify-head {
+        .verify-head-one {
+            width: 304px;
+        }
+        .verify-head-second {
+            width: 200px;
+        }
+        .verify-head-third {
+            width: 712px;
+        }
+        .verify-head-half {
+            width: 456px;
+        }
+        .verify-head-four {
+            width: 228px;
+        }
+    }
+    .verify-input {
+        border: none;
+        text-indent: 20px;
+        padding-right: 20px;
+        height: 44px;
+        line-height: 44px;
+        width: 100%;
+    }
+    .verify-content {
+        padding-left: 20px;
+        height: 44px;
+        line-height: 44px;
+        width: 100%;
+        color: #333;
+    }
+    .verify-input:focus, .editDetail-top-input:focus {
+        outline-color: #369fff;
+    }
+    .verify-input::-webkit-input-placeholder, .editDetail-top-input::-webkit-input-placeholder {
+        color: #ccc;
+        font-weight: normal;
+    }    
+    .ant-form-item {
+        margin: 0;
+    }
+    .verify-table-content {
+        position: relative;
+    }
+    .delete {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+        background-color: rgba(255, 0, 0, .1);
+        cursor: pointer;
+    }
+
+    .verify-alone {
+        display: inline-block;
+        margin-left: 50px;
+    }
+}

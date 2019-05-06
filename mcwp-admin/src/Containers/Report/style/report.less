@@ -1,0 +1,51 @@
+@import "../../../Assets/Style/themes/default.less";
+.report-container{
+    .report-content{
+        position: relative;
+        height: auto;
+        background-color: @colorfff;
+        margin: 10px 0;
+        border-radius: 4px;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+    .search-item, .ant-select-selection,.ant-calendar-picker-input{
+        height: 36px;
+        line-height: 36px;
+    } 
+    // 中间线样式
+    .middle-line {
+        display: inline-block;
+        height: 2px;
+        width: 10px;
+        margin: 0 8px;
+        vertical-align: middle;
+        background-color: #c0c0c0;
+    }
+    .report-tabs {
+        .ant-table-content{
+            padding:0 30px;
+        }
+        .ant-tabs-bar{
+            border: none;
+        }
+        .ant-tabs-nav-wrap{
+            margin-left: 30px;
+        }
+        .ant-tabs-tab{
+            padding: 5px;
+        }
+        .ant-tabs-tab-active{
+            color: #333;
+            border-bottom: 3px solid #71b352;
+            font-weight: bold;
+        }
+        .ant-tabs-ink-bar {
+            background-color: #72b352;
+            height: 3px;
+        }
+        .ant-tabs-nav .ant-tabs-tab:hover {
+            color: #555;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import "../../../Assets/Style/themes/default.less";
+.productStep-container {
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 100%;
+    .productStep-title {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 14px;
+        color: #333;
+        margin-right: 10px;
+    }
+    .productStep-content {
+        display: inline-block;
+    }
+    .productStep-item {
+        position: relative;
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 16px;
+        padding: 0 10px;
+        background-color: #f0f7ec;
+        margin: 40px 10px;
+        cursor: pointer;
+        min-width: 60px;
+    }
+    .productStep-add {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 2px;
+    }
+    .productStep-delete {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        width: 14px;
+        height: 14px;
+    }
+    .productStep-item + .productStep-item {
+        margin-left: 30px;
+    }
+    .productStep-item + .productStep-item::before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 6px;
+        background: url("@{img-three-level-path}/product_icon_arrow.png") no-repeat center center;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+    }
+    .ant-popover-inner-content {
+        padding: 20px;
+        width: 240px;
+    }
+    .productStep-addItem {
+        font-size: 13px;
+        color: #333;
+        margin-bottom: 20px;
+        // float: left;
+    }
+    .productStep-confirm-addItem {
+        font-size: 13px;
+        color: #5292fc;
+        text-align: right;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .productStep-minItem-container .productStep-minItem:nth-of-type(even) {
+        margin-left: 10px;
+    }
+    .productStep-minItem {
+        display: inline-block;
+        font-size: 12px;
+        color: #333;
+        height: 28px;
+        line-height: 28px;
+        background-color: #ebebeb;
+        border-radius: 14px;
+        padding: 0 10px; 
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .productStep-next, .productStep-save {
+        width: 80px;
+    }
+    .productStep-save {
+        margin-left: 20px;
+    }
+    .productStep-next {
+        margin-left: 240px;
+    }
+    .productStep-save {
+        background-color: #f0f7ec;
+        border-color: #f0f7ec;
+        color: #333;
+    }
+    .ant-tabs-content {
+        margin-bottom: 60px;
+    }
+    //去除切换线条
+    .ant-tabs-bar {
+        border-bottom: none;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        color: #000;
+        font-weight: bold;
+    }
+    .ant-tabs-ink-bar {
+        background-color: @color72b352;
+        height: 3px;
+    }
+}

@@ -1,0 +1,22 @@
+{"frames": {
+
+"end_1.png":
+{
+	"frame": {"x":0,"y":0,"w":680,"h":396},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":680,"h":396},
+	"sourceSize": {"w":680,"h":396}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "end.png",
+	"format": "RGBA8888",
+	"size": {"w":680,"h":396},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:861f0147e33c18a98e1fd2f51090000c:3bd3f7271d780c108025e744ddeb0771:217d1ec94cd5af1e1861277303059123$"
+}
+}

@@ -1,0 +1,59 @@
+@import "../../../Assets/Style/themes/default.less";
+.contractPDF-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,.5);
+    z-index: 10000;
+    // display: none;
+    .page-change {
+        margin: 0 auto;
+        padding: 10px 0;
+        // text-align: center;
+        position: relative;
+        height: 24px;
+    }
+    .contract-preview {
+        height: 100vh;
+        overflow: scroll;
+        margin: 0 auto;
+    }
+    .contract-preview::-webkit-scrollbar {
+        display:none
+    }
+    .page-previous {
+        position: absolute;
+        right: -80px;
+        top: 250px;
+    }
+    .page-next {
+        position: absolute;
+        right: -80px;
+        top: 340px;
+    }
+    .page-button {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        width: 80px;
+        cursor: pointer;
+    }
+    .page-number {
+        position: absolute;
+        right: -130px;
+        top: 300px;
+        font-size: 16px;
+        color: #fff;
+        margin: 0 50px;
+    }
+    // 关闭预览
+    .contract-preview-close {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: -80px;
+        cursor: pointer;
+    }
+}

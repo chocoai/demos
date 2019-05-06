@@ -1,0 +1,67 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.form-container {
+    .form-link + .form-link {
+        margin-left: 14px;
+    }
+    .form-disable-link {
+        color: @color-999999;
+        cursor: auto;
+    }
+    // 上传模版
+    .form-upload {
+        display: inline-block;
+        position: relative;
+        margin-left: 14px;
+        color: #108ee9;
+        cursor: pointer;
+        .form-upload-target {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+// 弹出框样式
+.form-conf-modal {
+    .form-wrapper {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .form-title {
+        margin-right: 10px;
+    }
+    .form-input {
+        height: 30px;
+        line-height: 30px;
+        width: 200px;
+        border-radius: 4px;
+        padding: 0 8px;
+        border: 1px solid #ccc;
+    }
+}
+
+// 其他模块共用样式
+.formApplyField-container, .form-apply-container, .form-investigate-container, .formField-container {
+    .form-conf-wrapper {
+        margin-top: 10px;
+        background-color: #fff;
+    }
+    .form-button + .form-button {
+        margin-left: 14px;
+    }
+    .form-button {
+        color: @color-369fff;
+        cursor: pointer;
+    }
+    .form-disable-button {
+        color: @color-999999;
+        cursor: auto;
+    }
+}

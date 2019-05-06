@@ -1,0 +1,94 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.detail-topinfo-container {
+    .result-container {
+        border: 1px dotted #666;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .card-risk .ant-card-head-title {
+        background: url("@{img-three-level-path}/approval-risk.png") no-repeat 0 center;
+        background-size: 18px 18px;
+        padding-left: 25px;
+    }
+    .card-black .ant-card-head-title {
+        background: url("@{img-three-level-path}/approval-black.png") no-repeat 0 center;
+        background-size: 18px 18px;
+        padding-left: 25px;
+    }
+    .topinfo-row {
+        color: #333;
+        padding: 0 10px;
+        .topinfo-col {
+            margin: 10px 0;
+            span {
+                font-size: 14px;
+            }
+            .apply-loan-title {
+                position: relative;
+                display: block;
+                .label {
+                    position: absolute;
+                    left: 68px;
+                }
+            }
+        }
+    }
+    .result-content {
+        color: #ff4f02;
+        line-height: 34px;
+        // cursor: pointer;
+        font-size: 14px
+    }
+    // 卡片样式
+    .detail-risk-container {
+        margin: 20px 0;
+        &:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .card {
+            float: left;
+            // padding: 20px 30px;
+            padding: 20px;
+            margin-right: 4%;
+            width: 46%;
+            background-color: #f7f7f7;
+            height: 200px;
+            overflow-y: scroll;
+        }
+        .ant-card-head-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .ant-card-head {
+            height: 24px;
+            line-height: 24px;
+            background: #f7f7f7;
+            border-bottom: none;
+            padding: 0 12px;
+            color: #333;
+        }
+        .ant-card-body {
+            padding:0 12px;
+        }
+        .card-item:before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #b1dfb4;
+            left: 0;
+            top: 7px;
+        }
+        .card-item {
+            font-size: 12px;
+            line-height: 20px;
+            position: relative;
+            text-indent: 20px;
+        }
+    }
+}

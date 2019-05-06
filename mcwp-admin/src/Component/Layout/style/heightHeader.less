@@ -1,0 +1,30 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.height-header {
+    position: relative;
+    height: @login-header-height;
+    width: 100%;
+    line-height: @login-header-line-height;
+    background-color: @login-header-background;
+    box-sizing: border-box;
+    overflow: hidden;
+    &.hheader-bottom {
+        border-bottom: 2px solid @header-border-bottom-color;
+    }
+    .hheader-logo {
+        display: inline-block;
+        background: url("@{img-three-level-path}/login_logo.png") no-repeat center center;
+        background-size: cover;
+        width: 49px;
+        height: 48px;
+        // margin-top: -8px;
+        vertical-align: middle;
+    }
+    .hheader-title {
+        display: inline-block;
+        font-size: 38px;
+        color: #333;
+        vertical-align: middle;
+        margin-left: 15px;
+    }
+}

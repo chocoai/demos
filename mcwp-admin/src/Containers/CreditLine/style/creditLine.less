@@ -1,0 +1,149 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.creditLine-container {
+    background-color: #fff;
+    //搜索框
+    .creditLine-search {
+        position: relative;
+        margin-bottom: 20px;
+        width: 100%;
+        &:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        // 本周 本月 近三个月 样式
+        .search-quantum {
+            float: right;
+            height: 36px;
+            margin-right: 12px;
+            .ant-divider {
+                margin: -4px 0px;
+                display: inline-block;
+                height: 16px;
+                background: #bbb;
+            }
+            .time-quantum {
+                display: inline-block;
+                padding: 0 15px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 13px;
+                color: #333;
+                &.quantum-selected {
+                    color: #43b44a !important;
+                    border-bottom: 2px solid #43b44a;
+                }
+            }
+        }
+        // 重置按钮的样式
+        .reset-loan {
+            line-height: 36px;
+            width: 80px;
+            background: #E8E8E8;
+            border-color:#E8E8E8;
+            &:hover, &:focus {
+                background-color: #7b8291;
+                border-color: #7b8291;
+                color: #fff;
+            }
+        }
+        .ant-btn-primary {
+            float: right;
+            margin-left: 10px;
+            color: black;
+        }
+        
+        // 中间线样式
+        .middle-line {
+		    display: inline-block;
+		    height: 2px;
+            width: 10px;
+            margin: 0 8px;
+            vertical-align: middle;
+		    background-color: #c0c0c0;
+		    
+        }
+        // select 贷款状态样式
+        .search-float {
+            float: right;
+            margin-right: 8px;
+        }
+        .date-gap {
+            margin: 0 8px;
+        }
+        // 搜索框
+        .ant-input-affix-wrapper {
+            width: 250px;
+            float: right;
+        }  
+        // 搜索部分为36px 有待优化
+       
+        .search-item, .ant-calendar-picker-input{
+            height: 36px;
+            line-height: 36px;
+        }
+    }
+    // 不知道这里会不会影响其他模块Modal的样式  待定
+    .confirm-modify-modal {
+        width: 300px !important;
+    }
+   
+}
+.creditLine-modal {
+    width: 450px !important;
+    .ant-modal-body {
+        .input-credit-line {
+             margin: 20px 40px 0;
+             text-align: right;
+         }
+         .credit-amount {
+             margin-top: 20px;
+         }
+         .credit-change {
+             margin: 25px 0 15px 50px;
+         }
+         // 修改框样式
+         .modify-title {
+             margin-right: 15px;
+             font-size: 14px;
+         }
+         .modify-unit {
+             display: inline-block;
+             width: 15px;
+             text-align: left;
+             margin-left: 5px;
+         }
+         .icon-credit {
+             color:#AEE;
+             font-size: 14px;
+             margin-right: 3px;
+         }
+         // 确认修改框出现后的样式
+         .modify-content-head {
+             margin-top: 20px;
+         }
+         .modify-content {
+             font-size: 14px;
+             padding-left: 10px;
+         }
+         .modify-content-weight {
+             font-weight: 600;
+         }
+         .modify-content-inside {
+             margin-left: 20px;
+             margin-bottom: 5px;
+         }
+         
+     }
+     .ant-modal-footer {
+         text-align: center;
+         padding: 15px 15px 30px;
+         border: 0;
+         .ant-btn-lg {
+             float: none !important;
+         }
+     }
+}

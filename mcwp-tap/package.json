@@ -1,0 +1,65 @@
+{
+  "name": "mcwp-tap",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "dev-build": "yarn install && vue-cli-service build --api=dev",
+    "pre-build": "yarn install && vue-cli-service build --api=pre",
+    "prod-build": "yarn install && vue-cli-service build --api=prod",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "16.11.0",
+    "babel-polyfill": "^6.26.0",
+    "better-scroll": "^1.12.4",
+    "bignumber.js": "^7.2.1",
+    "crypto-js": "^3.1.9-1",
+    "exif-js": "^2.3.0",
+    "fastclick": "^1.0.6",
+    "lodash.get": "^4.4.2",
+    "pixi.js": "^4.8.2",
+    "qrcode": "^1.3.0",
+    "register-service-worker": "^1.0.0",
+    "store": "^2.0.12",
+    "svg-progress-bar": "^0.1.17",
+    "tiny-slider": "^2.8.7",
+    "vant": "^1.0.7",
+    "vue": "^2.5.16",
+    "vue-animejs": "^1.0.1",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "weixin-js-sdk": "v1.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/eslint-config-prettier": "^3.0.0-beta.15",
+    "babel-plugin-import": "^1.7.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^6.0.0",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

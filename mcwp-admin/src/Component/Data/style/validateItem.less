@@ -1,0 +1,50 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.validate-item {
+    position: relative;
+    padding: 10px;
+    background-color: #fbfbfb;
+    margin-bottom: 10px;
+    .validate-title {
+        font-size: 18px;
+        color: #333;
+        line-height: 18px;
+        font-weight: bold;
+        margin-left: 10px; 
+    }
+    .validate-main {
+        position: relative;
+        padding: 30px 10px 40px 10px;
+        font-size: 16px;
+        color: #333;
+        width: 100%;
+        padding-left: 105px;
+        &:after {
+            display: block; 
+            clear: both; 
+            content: ""; 
+            height: 0;
+        }
+        .intro-title {
+            position: absolute;
+            left: 10px;
+            display: inline-block;
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin-bottom: 2px;
+                border-radius: 50%;
+                background-color: #43b44a;
+                opacity: .5;
+                margin-right: 6px;
+            }
+        }
+    }
+    .switch-risk {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}

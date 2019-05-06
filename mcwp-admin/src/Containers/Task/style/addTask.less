@@ -1,0 +1,100 @@
+@import "../../../Assets/Style/themes/default.less";
+.addtask-container {
+    background-color: #fff;
+    height: 100%;
+    font-size: 13px;
+    min-width: 500px;
+    .addtask-item {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    .addtask-item + .addtask-item {
+        margin-top: 30px;
+    }
+    .addtask-items {
+        &:after {
+            content:".";
+            clear:both;
+            display:block;
+            height:0;
+            overflow:hidden;
+            visibility:hidden;
+        }
+    }
+    .addtask-min-item {
+        display: flex;
+        width: 50%;
+        float: left;
+        margin-top: 30px;
+        .addtask-title {
+            line-height: 32px; // 暂时用行高
+        }
+    }
+    .addtask-title {
+        flex: 0 0 60px;
+        margin-right: 20px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .addtask-type {
+        width: 80px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        background-color: #ebebeb;
+        color: #888;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+    .addtask-selected {
+        background-color: #e3f2e4;
+        color: #333;
+    }
+    .addtask-type + .addtask-type {
+        margin-left: 10px;
+    }
+    // 文本框
+    .task-name {
+        flex: 1;
+        height: 100px;
+        min-height: 100px;
+        min-width: 200px;
+        color: #333;
+        padding: 10px;
+        padding-bottom: 20px;
+        resize: none;
+        overflow: hidden;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        box-sizing: border-box;
+        // transition: .3s;
+        &:focus {
+            border-color: #49a9ee;
+            outline: 0;
+            box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+        }
+        &:hover {
+            border-color: #49a9ee
+        }
+    }
+    .task-count {
+        position: absolute;
+        bottom: 4px;
+        right: 10px;
+    }
+    .addtask-user {
+        width: 180px;
+    }
+    .ant-calendar-picker,.ant-calendar-picker-input {
+        display: inline-block;
+        width: 180px;
+    }
+    .addtask-btns {
+        margin-top: 80px;
+        text-align: center;
+        .common-small-btn {
+            margin-right: 20px;
+        }
+    }
+}

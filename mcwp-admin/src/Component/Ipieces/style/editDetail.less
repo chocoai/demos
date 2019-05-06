@@ -1,0 +1,111 @@
+@import "../../../Assets/Style/themes/default.less";
+.editDetail-container {
+    width: 95%;
+    font-size: 13px;
+    color: #333;
+    margin-left: 20px;
+    .editDetail-top {
+        margin-bottom: 30px;
+    }
+    .editDetail-top-fixed {
+        width: 254px;
+    }
+    .editDetail-top, .editDetail-top-content {
+        display: flex;
+    }
+    .editDetail-top-content {
+        height: 36px;
+        line-height: 36px;
+    }
+    .editDetail-top-content + .editDetail-top-content {
+        margin-left: 70px;
+    }
+    .editDetail-top-input {
+        width: 120px;
+        height: 36px;
+        border: 1px solid #cecece;
+        border-radius: 4px;
+        margin: 0 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .finance-head {
+        background-color: #fbfbfb;
+    }
+    .finance-table-container {
+        width: 100%;
+        // overflow-y: auto;
+    }
+    .finance-table {
+        border-collapse: collapse;
+    }
+    .finance-head-first, .finance-table-content {
+        border: 1px solid #cecece;
+        height: 44px;
+        line-height: 44px;
+    }
+    .finance-head-first {
+        white-space: nowrap;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    .finance-input {
+        border: none;
+        text-align: right;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 44px;
+        line-height: 44px;
+        width: 100%;
+    }
+    .finance-input:focus, .editDetail-top-input:focus {
+        outline-color: #369fff;
+    }
+    .finance-input::-webkit-input-placeholder, .editDetail-top-input::-webkit-input-placeholder {
+        color: #ccc;
+        font-weight: normal;
+    }    
+    .ant-form-item {
+        margin: 0;
+    }
+
+    //选项覆盖
+    .ant-select-lg .ant-select-selection--single {
+        height: 44px;
+    }
+    .ant-select-lg .ant-select-selection__rendered {
+        line-height: 44px;
+    }
+    .ant-select-selection {
+        border-radius: 0px;
+    }
+
+    //选择
+    .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
+        box-shadow: none;
+        border-color: transparent;
+    }
+    .ant-select-selection {
+        border-color: transparent;
+    }
+    .ant-select-selection:focus {
+    border-color:#369fff;
+    }
+
+    .finance-table-content {
+        position: relative;
+    }
+    .delete {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+        background-color: rgba(255, 0, 0, .1);
+        cursor: pointer;
+    }
+}

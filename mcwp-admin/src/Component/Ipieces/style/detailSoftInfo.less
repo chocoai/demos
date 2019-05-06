@@ -1,0 +1,107 @@
+@import "../../../Assets/Style/themes/default.less";
+
+//.soft-detail是包裹在最外层的class 防止下面的元素与相同class互相冲突
+.soft-detail-container{
+    margin-top: 20px;
+    .soft-warn{
+        height: 360px;
+        margin-top: -10px;
+        .soft-warnInfo{
+            font-size: 14px;
+            color: #555555;
+            display: block;
+            height: 120px;
+            margin: 0px 10px 0px 8px;
+        }
+    }
+    .soft-choice{
+        float: left;
+        //所有选项的通用样式
+        .ant-radio-button-wrapper{
+            width:100px;
+            height:120px;
+            padding: 10px;
+            display:block;
+            text-align: left;
+            border: 1px solid #cecece;
+            color: #888888;
+            font-size: 12px;
+            line-height: 20px;
+            border-radius: 0;
+            span{
+                display: block;
+                word-break: break-all;
+                
+            }
+        }
+        //所有选项左边框去去掉
+        .ant-radio-button-wrapper:nth-of-type(1),.ant-radio-button-wrapper:nth-of-type(2),.ant-radio-button-wrapper:nth-of-type(3){
+            border-left: 0;
+        }
+        //所有RadioGroup 的第二第三RadioButton 都去掉上边框  第一个RadioButton保留上边框
+        .ant-radio-button-wrapper:nth-of-type(2),.ant-radio-button-wrapper:nth-of-type(3){
+            border-top: 0;
+        }
+        //年龄、婚姻、家庭关系等描述样式
+        .option-describe{
+            display: block;
+            text-align: center;
+            margin: 20px 0px 60px;
+            font-size: 14px;
+            color: #555555;
+        }
+        //去除antd选中时所产生的效果
+        .ant-radio-button-wrapper-checked{
+            box-shadow: 0 0 0 0;
+            
+        }
+        .ant-radio-button-wrapper-checked:hover{
+                box-shadow: 0 0 0 0 ;
+        }
+        //项目选中时，添加背景色
+        .checked-happy,.checked-focus,.checked-warn{
+            border: 0;
+            border-right: 1px solid #cecece;
+            color: #333333 !important;
+        }
+        .checked-happy{
+            background: #26b14c !important;  
+            border-radius: 0;
+        }
+        .checked-focus{
+            background: #fdc244 !important;
+        }
+        .checked-warn{
+            background: #f64444 !important;
+        }
+            //年龄和婚姻字体左右居中，上下居中
+        .option-center{
+            text-align: center;
+            line-height: 100px;
+        }
+       
+        
+    }
+    //处理前两个选择群的hover效果与居中效果
+    .soft-choice:nth-of-type(2),.soft-choice:nth-of-type(3)  {
+        .ant-radio-group .ant-radio-button-wrapper{
+            text-align: center;
+            line-height: 100px;
+        }
+        
+    }
+    //处理第一个选择群的左边框消失
+    .soft-choice:nth-of-type(2)  {
+        .ant-radio-group .ant-radio-button-wrapper{
+            border-left: 1px solid #cecece;
+        }
+        
+    }
+
+}
+
+
+
+
+
+

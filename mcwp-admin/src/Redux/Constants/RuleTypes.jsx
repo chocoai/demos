@@ -1,0 +1,10 @@
+export const GET_RULE = 'GET_RULE'; // 获取逻辑校验阈值
+export const CHANGE_RULE = 'CHANGE_RULE'; // 修改逻辑校验阈值
+export const RIGHT_STATUS_EDIT = 'RIGHT_STATUS_EDIT'; // 修改权益逻辑校验阈值
+export const RIGHT_STATUS_CANCEL = 'RIGHT_STATUS_CANCEL'; // 取消权益逻辑校验阈值
+export const PROFIT_STATUS_EDIT = 'PROFIT_STATUS_EDIT'; // 修改毛利逻辑校验阈值
+export const PROFIT_STATUS_CANCEL = 'PROFIT_STATUS_CANCEL'; // 取消毛利逻辑校验阈值
+export const SALE_STATUS_EDIT = 'SALE_STATUS_EDIT'; // 修改销售额逻辑校验阈值
+export const SALE_STATUS_CANCEL = 'SALE_STATUS_CANCEL'; // 取消销售额逻辑校验阈值
+export const PURCHASE_STATUS_EDIT = 'PURCHASE_STATUS_EDIT'; // 修改采购额逻辑校验阈值
+export const PURCHASE_STATUS_CANCEL = 'PURCHASE_STATUS_CANCEL'; // 取消采购额逻辑校验阈值

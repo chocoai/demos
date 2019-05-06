@@ -1,0 +1,39 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.risk-item {
+    display: flex;
+    position: relative;
+    padding: 10px;
+    background-color: #fbfbfb;
+    margin-bottom: 20px;
+    .risk-img {
+        width: 152px;
+        height: 104px;
+        cursor: pointer;
+    }
+    .risk-content {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .risk-title {
+        font-size: 18px;
+        color: @color333;
+        font-weight: bold;
+    }
+    .risk-profit {
+        font-size: 16px;
+        color: @color333;
+        margin-top: 30px;
+    }
+
+    .ant-switch-checked {
+        background-color: @color72b352;
+        border-color: @color72b352;
+    }
+
+    .switch-risk {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}

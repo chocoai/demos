@@ -1,0 +1,168 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.breadcrumb {
+    // padding: 20px 30px auto;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 13px;
+    color: @color888;
+    background-color: #fff;
+    &:last-child {
+        color: @color333;
+    }
+}
+.settled-modal{
+    width: 400px !important;
+}
+.replenish-modal{
+    width: 600px !important;
+}
+.loan-confirm-modal {
+    .confirm-modal-loan{
+        width: 625px!important
+    }
+    .input-credit,.ant-calendar-picker{
+        // margin-left: 25px;
+    }
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .ant-modal-body{
+        padding: 40px 60px 0px 60px;
+    }
+    .loan-confirm-item{
+        display: flex;
+        margin-bottom: 30px;
+        .loan-confirm-span{
+            min-width: 100px;
+            line-height: 28px;
+        }
+        .bank-card{
+            width: 49%;
+        }
+    }
+    .loan-confirm-item4{
+        .ant-input-group-wrapper{
+            width: 54%;
+        }
+    }
+    .loan-confirm-bonus{
+        width: 100px;
+        height: 28px;
+        margin-left: 30px;
+        text-align: center;
+        line-height: 28px;
+        border-radius: 14px;
+        background: #ebebeb;
+        cursor: pointer;
+        span{
+            color: #369fff;
+        }
+    }
+    .loan-confirm-bonus-selected{
+        background: #c8eaca;
+    }
+    .secure-title {
+        margin-bottom: 25px;
+        // margin-left: 25px;
+        font-size: 14px;
+    }
+    .closed-title {
+        margin-top: 20px;
+        margin-left: 25px;
+        font-size: 14px;
+    }
+    .repament-date {
+        // margin: 15px 0;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .contract-date {
+        margin: 15px 0 15px 25px;
+    }
+    .input-credit {
+        width: 200px;
+    }
+    .icon-credit {
+        color:#AEE;
+        font-size: 14px;
+        margin-right: 3px;
+    }
+    .bank-card {
+        // margin-left: 25px;
+        width: 337px;        
+    }
+    .ant-tooltip-inner{
+        // padding: 20px 10px;
+    }
+    .loan-popover{
+        min-width: 100px;
+        position: relative;
+    }
+    .loan-popover-rate{
+        position: absolute;
+        left: -30px;
+        top: 40px;
+       
+    }
+    .loan-popover-arrow{
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px;
+        border-top-width: 0;
+        border-bottom-color: #fff;
+        top: -5px;
+    }
+    .loan-popover-warp{
+        width: 145px;
+        height: 52px;
+        padding: 8px 16px;
+        box-shadow:0 0 20px rgba(100, 100, 100, 0.2)
+    }
+}
+.ant-modal-footer {
+    text-align: center;
+    padding: 15px 15px 30px;
+    border: 0;
+    .ant-btn-lg {
+        float: none !important;
+        margin: 10px 10px;
+    }
+}
+.button-wrapper {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    .button-loan {
+        display: inline-block;
+        background-color: #fff;
+        color: @color1c7bef;
+        color: #333;
+        height: 32px;
+        line-height: 32px;
+        width: 70px;
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer;
+        border: 1px #ddd solid;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .button-loan + .button-loan {
+        margin-left: 10px;
+    }
+    .bread-link {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #333;
+    }
+}

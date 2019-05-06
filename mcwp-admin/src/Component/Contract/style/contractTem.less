@@ -1,0 +1,86 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.contractTEM-container{
+    position: relative;
+    .search-button{
+        height: 36px;
+        width: 96px;
+        color: #ffffff;
+        border-radius: 0;
+        position: absolute;
+        right: -20px;
+        top: -50px;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active {
+        color: #fff!important;
+        background-color: #7b8292;
+        border-bottom: none!important;
+    }
+    .ant-tabs-tab {
+        margin-right: 0;
+        background-color: #f4f4f4;
+        color: #000;
+        transition: none;
+        padding: 8px 10px;
+    }
+    .ant-tabs-ink-bar {
+        height: 0!important;
+    }
+    .card-content{
+        background: url("@{img-three-level-path}/icon_contract-template.png") no-repeat center 10px;
+        height: 150px;
+        width: 100%;
+    }
+    .card-title{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        text-align: center;
+    }
+    .card-action{
+        padding-top: 120px;
+        text-align: center;
+    }
+    .ant-col-6 {
+        width: 20%;
+    }
+    .card-a+.card-a{
+        margin-left: 30px;
+    }
+    .delete {
+        color: #bd262d;
+    }
+    .ant-pagination {
+        float: none!important;
+        display: table;
+        margin: 16px auto !important;
+    }
+    .nodata{
+        text-align: center;
+    }
+    .anticon{
+        padding-right: 5px;
+    }
+    .card-stop{
+        color: rgb(255, 193, 37);
+    }
+    .card-col{
+        min-width: 200px;
+    }
+    .contractTEM-content{
+        margin-bottom: 20px;
+        .ant-switch{
+            margin-left: 20px;
+        }
+        .ant-switch-checked{
+            background-color: #72b352;
+            border-color: #72b352;
+        }
+    }
+    .card-unable{
+        color: #ccc;
+        cursor: not-allowed;
+    }
+}

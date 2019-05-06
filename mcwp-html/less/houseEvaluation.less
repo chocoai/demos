@@ -1,0 +1,152 @@
+@import url(common/rem.less);
+@import url(common/rem.picker.less);
+body {
+    position: relative;
+    width: 10.80rem;
+    margin: 0 auto;
+}
+
+.house-evaluation {
+    position: relative;
+    width: 10.80rem;
+    margin: 0 auto;
+    .allmap {
+        margin: .32rem auto 0 auto;
+        width: 100%;
+        max-width: 10.80rem;
+        height: 10.38rem;
+        .anchorBL {
+            img {
+                display: none;
+            }
+        }
+    }
+    .current-city {
+        height: .96rem;
+        line-height: .96rem;
+        font-size: .4rem;
+        color: #666;
+        width: 2.16rem;
+        text-align: center;
+        overflow: hidden;
+        .location-img {
+            display: inline-block;
+            background: url(../images/application-process_icon_location.png) no-repeat center center;
+            background-size: cover;
+            height: .48rem;
+            width: .48rem;
+            vertical-align: middle;
+            margin-right: .08rem;
+        }
+    }
+    .weui-unit-btn {
+        position: absolute;
+        top: 0;
+        right: .64rem;
+        height: 1.46rem;
+        border-left: none;
+        font-size: .42rem;
+        background-color: #fff;
+        color: #666;
+    }
+    .assess-btn {
+        margin: .32rem auto;
+    }
+}
+
+.weui-search-bar {
+    background-color: #fff;
+    padding: .32rem 0 .32rem .4rem;
+    .weui-search-bar__form {
+        &:after {
+            border: none;
+        }
+    }
+    .weui-search-bar__box {
+        width: 8rem;
+        height: .96rem;
+        line-height: .96rem;
+        padding-left: .4rem;
+        padding-right: .4rem;
+        border-radius: 40px;
+        background-color: #f4f4f4;
+    }
+    .weui-icon-search {
+        font-size: .48rem;
+        line-height: .96rem;
+        left: .4rem;
+        &:before {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .weui-icon-clear {
+        font-size: .32rem;
+        line-height: .96rem;
+        right: .2rem;
+    }
+    .weui-search-bar__input {
+        font-size: .4rem;
+        margin-left: .64rem;
+        height: .96rem;
+        padding: 0;
+    }
+}
+
+.tangram-suggestion {
+    td {
+        height: .96rem !important;
+        line-height: .96rem !important;
+        font-size: .32rem;
+        .route-icon {
+            padding-left: .48rem;
+            background: transparent;
+        }
+    }
+    div:last-child {
+        display: none;
+    }
+}
+.tangram-suggestion-main {
+    margin-left: -1.64rem !important;
+    z-index: 100;
+}
+
+.house-modal {
+    position: absolute;
+    top: 3.2rem;
+    left: 50%;
+    margin-left: -3.88rem;
+    width: 6.96rem;
+    padding: .4rem;
+    border-radius: 15px;
+    background-color: #fff;
+    z-index: 10;
+    .house-title {
+        font-size: .48rem;
+        color: #333;
+        line-height: 1;
+    }
+    .house-addr {
+        margin-top: .32rem;
+        font-size: .4rem;
+        color: #666;
+    }
+    .house-addr-desc {
+        margin-top: .48rem;
+        input {
+            width: 3.24rem;
+            height: .88rem;
+            line-height: .88rem;
+            border: 1px solid #ccc;
+            border-radius: 16px;
+            font-size: .4rem;
+            color: #666;
+            padding: 0 .3rem;
+            box-sizing: border-box;
+            &:last-child {
+                float: right;
+            }
+        }
+    }
+}

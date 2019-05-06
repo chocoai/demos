@@ -1,0 +1,53 @@
+@import "../../../Assets/Style/themes/default.less";
+.ant-table {
+    overflow: visible;
+}
+.ipieces-container {
+    background-color: #fff;
+	// 此处合并之后删除
+    .ipieces-tabs {
+        margin-bottom: 8px;
+        .first-menu-tabs();
+        .ant-menu {
+            line-height: 42px;
+        }
+        .ant-menu-item {
+            padding: 0px 16px;
+        }
+    }
+	.dataLayout {
+		.middle-line {
+			margin-top: 17px;
+		    display: inline-block;
+		    vertical-align: middle;
+		    height: 2px;
+		    width: 10px;
+		    background-color: #c0c0c0;
+		    margin-left: 8px;
+		    margin-right: 8px;
+		}
+		.ant-calendar-picker {
+			float: right;
+		}
+		.title {
+			float: right;
+			line-height: 36px;
+		}
+	}
+	.ipieces-prdName {
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		max-width: 150px;
+		display: inline-block;
+    }
+    .cursor-pointer {
+        cursor: pointer;
+        display: inline-block;
+        color: rgb(16, 142, 233);
+        padding: 5px;
+    }
+}
+#target {
+	transform: scale(2, 2);
+}

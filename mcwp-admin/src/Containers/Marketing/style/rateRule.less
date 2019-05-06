@@ -1,0 +1,139 @@
+@import "../../../Assets/Style/themes/default.less";
+.rate-rule-container,.interest-rule-container {
+    .rule-content {
+        background: #fff;
+        margin-top: 10px;
+        min-height: 500px;
+    }
+    .rule-formula {
+        font-weight: bold;
+        padding-left: 20px;
+        line-height: 40px;
+        background-color: #f7f7f7;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .ant-row {
+        padding: 0 10px;
+    }
+    .knife-set{
+        margin-bottom: 30px;
+        border: 1px dashed #ddd;
+        padding: 20px 10px 0px 10px;
+        .title-col{
+            padding: 0 0 20px 10px;
+        }
+        .modal-row{
+            padding: 0;
+        }
+    }
+    .knife {
+        margin-bottom: 30px;
+        border: 1px dashed #ddd;
+        padding: 20px 10px 0px 10px;
+        .ant-col-12 {
+            float: none;
+        }
+        .knife-error {
+            margin-left: 110px;
+            color: #d23737;
+        }
+        .help-icon {
+            position: absolute;
+            right: -60px;
+            top: 0px;
+            padding-top: 6px;
+            img {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+    .ant-form-item-label {
+        min-width: 100px;
+        text-align: left;
+    }
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .upload-container {
+        background: #ebebeb;
+        width: 150px;
+    }
+    .modal-row + .modal-row {
+        margin-top: 20px;
+    }
+    .upload-container {
+        padding: 25px 0;
+    }
+    .row-tip {
+        height: 150px;
+        padding: 10px 0 0 10px;
+        position: relative;
+    }
+    .action-btn {
+        cursor: pointer;
+        color: #369bff;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+    }
+    .idcard-img {
+        position: relative;
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .idcard-file {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 10px;
+        width: 48px;
+        height: 20px;
+        opacity: 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        font-size: 0;
+    }
+    .des-content {
+        -ms-flex: 1 1;
+        flex: 1 1;
+        height: 120px;
+        width: 100%;
+        min-width: 200px;
+        color: #333;
+        padding: 0 10px;
+        resize: none;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+    }
+    .ant-form-item-required:before{
+        display: none;
+    }
+    .des-count {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+.interest-rule-container{
+    .ant-form-item{
+        padding: 0
+    }
+    .knife-set {
+        padding-left: 20px;
+        .title-col{
+            padding: 0 0 20px 0px;
+        }
+    }
+}

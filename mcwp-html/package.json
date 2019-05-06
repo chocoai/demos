@@ -1,0 +1,32 @@
+{
+  "name": "mcwp-html",
+  "version": "1.0.0",
+  "description": "基于zepto + dot + fastclick + gulp搭建纯静态页面型前端工程解决方案模板",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp --env development",
+    "test": "gulp build --env test",
+    "advance": "gulp build --env advance",
+    "dist": "gulp build --env production"
+  },
+  "author": "sosout",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rev": "^7.1.0",
+    "gulp-rev-collector": "^1.0.4",
+    "gulp-sequence": "^0.4.5",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0"
+  }
+}

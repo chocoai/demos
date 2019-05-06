@@ -1,0 +1,80 @@
+@import "../../../Assets/Style/themes/default.less";
+.editManageType-container {
+    //单位样式
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .ant-input-group > .ant-input:first-child {
+        border-radius: 4px;
+    }
+    .ant-form-item-label {
+        text-align: left;
+        text-indent: 10px;
+    }
+    //去除自带样式*
+    .ant-form-item-required:before {
+        content: '';
+    }
+    .trend-row {
+        padding: 20px 10px 0;
+        border: 1px dotted #ccc;
+        margin-bottom: 10px;
+    }
+    .label-lines {
+        padding-right: 10px;
+        text-indent: 0;
+        display: inline-block;
+        white-space: normal;
+        line-height: 20px;
+    }
+    .label-lines:after {
+        content:':';
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+    }
+    .label-profit {
+        padding-left: 10px;
+    }
+    .profit-item {
+        padding-bottom: 10px;
+    }
+    .trend-row {
+        margin-right: 10px;
+    }
+
+    .ipieces-subtitle {
+        background-color: #fbfbfb;
+        font-weight: bold;
+        padding-left: 5px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .ipieces-delete {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px; 
+        transform: translate(50%,-50%);  
+        cursor: pointer;
+    }
+    .ipieces-add {
+        width: 100px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .ipieces-add-detail {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0093ff;
+        vertical-align: middle;
+    }
+    .ipieces-add-img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}

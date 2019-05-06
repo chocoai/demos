@@ -1,0 +1,367 @@
+@import "../../../Assets/Style/themes/default.less";
+.netloan-detail-container {
+    .breadcrumb {
+        // padding: 20px 30px auto;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 30px;
+        font-size: 13px;
+        color: @color888;
+        background-color: #fff;
+        &:last-child {
+            color: @color333;
+        }
+    }
+    .title {
+        font-weight: bold;
+        font-size: 13px;
+        color: #333;
+    }
+    .button-list {
+        overflow: hidden;
+    }
+    //审批状态
+    .audit-container {
+        border: 1px dotted #666;
+        padding: 10px;
+        .audit-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .audit-content {
+            margin-top: 10px;
+        }
+        .audit-list {
+            display: inline-block;
+            width: 260px;
+            text-align: left;
+        }
+        .audit-list + .audit-list {
+            margin-left: 20px;
+        }
+    }
+    //审批状态
+    .result-container {
+        border: 1px dotted #666;
+        padding: 10px;
+        .audit-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .audit-content {
+            margin-top: 10px;
+        }
+        .audit-list {
+            display: inline-block;
+            width: 260px;
+            text-align: left;
+        }
+        .audit-list + .audit-list {
+            margin-left: 20px;
+        }
+    }
+	.netloan-detail-content {
+		margin-top: 10px;
+		padding: 20px 30px;
+        background-color: #fff;
+        .card {
+            padding: 20px;
+            margin-right: 4%;
+            width: 46%;
+            background-color: #f7f7f7;
+            height: 200px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+        .ant-card-head {
+            height: 24px;
+            line-height: 24px;
+            background: #f7f7f7;
+            border-bottom: none;
+            padding: 0 12px;
+            color: #333;
+        }
+        .ant-card-head-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+		.netloan-title {
+			color: #333;
+			padding: 10px;
+			span {font-size: 14px;}
+        }
+        .detail-tabs {
+            margin-top: 20px;
+            .ant-tabs-ink-bar {
+                height: 0;
+                width: 0;
+            }
+            .ant-tabs-bar {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+            .ant-tabs-tab {
+                padding: 8px 10px;
+				text-align: center;
+				// line-height: 38px;
+                // margin-right: 10px;
+				color: #333;
+                background-color: #e5e5e5;
+                transition: none;
+				font-size: 14px;
+				border-bottom: none;
+                &.ant-tabs-tab-active {
+                    font-weight: normal;
+                    color: #fff;
+                    background-color: #7b8292;
+                }
+            }
+        }
+		.netloan-menu {
+			margin-top: 20px;
+			width: 100px;
+			border-bottom: none;
+			.ant-menu-item-selected {
+				color: #fff !important;
+				background-color: #7b8292 !important;
+			}
+			.netloan-menu-item {
+				padding: 0 10px;
+				text-align: center;
+				line-height: 38px;
+				color: #333;
+				font-size: 14px;
+				background-color: #e5e5e5;
+				border-radius: 6px;
+				border-bottom: none;
+			}
+		}
+		.personal-info {
+			margin: 20px 0 8px 0;
+			background-color: #f7f7f7;
+			padding: 10px 20px;
+			.title {
+				font-size: 14px;
+				color: #333;
+			}
+			.button {
+				float: right;
+				color: #5292fc;
+				margin-right: 30px;
+				cursor: pointer;
+			}
+		}
+		.personal-info-content {
+			padding: 10px 30px;
+		}
+        .detail-btns {
+            margin-top: 20px;
+        }
+        .detail-submit {
+            position: relative;
+            left: 30px;
+        }
+        .detail-cancle {
+            position: relative;
+            left: 50px;
+            background-color: #eee;
+            border: #eee;
+            color: #333;
+        }
+
+        //验证返回
+        //核实信息样式
+        .verified, .unverified, .unknown, .inconsistent {
+            padding-left: 20px;
+            position: relative;
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 16px;
+            height: 16px;
+        }
+        .verified {
+            color: #43b549;
+        }
+        .unverified, .unknown {
+            color: #888;
+        }
+        .inconsistent {
+            color: #f82335;
+        }
+        .verified:before, .unverified:before, .unknown:before, .inconsistent:before {
+            content: '';
+            background-size: cover;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .verified:before {
+            background: url("@{img-three-level-path}/entrymanagement_icon_verified.png") no-repeat;
+        }
+        .unverified:before, .unknown:before {
+            background: url("@{img-three-level-path}/entrymanagement_icon_unverified.png") no-repeat;
+        }
+        .inconsistent:before {
+            background: url("@{img-three-level-path}/entrymanagement_icon_difference.png") no-repeat;
+        }
+        .subtitle {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 10px 0;
+            height: 20px;
+        }
+
+
+    }
+    .result-content {
+        color: #ff4f02;
+        line-height: 34px;
+        // cursor: pointer;
+        font-size: 14px;
+    }
+	//去除切换线条
+    .ant-tabs-bar {
+        border-bottom: none;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        color: #000;
+        font-weight: bold;
+    }
+    .ant-tabs-ink-bar {
+        background-color: @color72b352;
+        height: 3px;
+    }
+    // .preview {
+    //     position: fixed;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     bottom: 0;
+    //     background-color: rgba(0, 0, 0,.5);
+    //     z-index: 10000;
+    // }
+    // .preview-hidden {
+    //     display: none;
+    // }
+    // .preview-carousel {
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     top: 208px;
+    //     margin: auto;
+    // 	width: 524px;
+    //     height: 326px;
+    //     background: #fff;
+    // }
+    // .preivew-img {
+    //     width: 524px;
+    //     height: 326px;
+    // }
+    // .slick-prev {
+    //     position: absolute;
+    //     left: -100px;
+    //     top: 120px;
+    //     width: 40px;
+    //     height: 40px;
+    //     color: transparent;
+    //     background-color: @color72b352;
+    //     background: url("@{img-three-level-path}/product_icon_last_pressed.png") no-repeat center center;
+    //     background-size: cover;
+    //     border: none;
+    //     user-select: none;
+    //     outline:none;
+    //     cursor: pointer;
+    // }
+    // .slick-next {
+    //     position: absolute;
+    //     right: -100px;
+    //     top: 120px;
+    //     width: 40px;
+    //     height: 40px;
+    //     color: transparent;
+    //     background: url("@{img-three-level-path}/product_icon_next_pressed.png") no-repeat center center;
+    //     background-size: cover;
+    //     border: none;
+    //     user-select: none;
+    //     outline:none;
+    //     cursor: pointer;
+    // }
+    // .preivew-close {
+    //     position: absolute;
+    //     top: -50px;
+    //     right: -100px;
+    //     cursor: pointer;
+    // }
+    //按钮颜色
+    .ant-switch-checked {
+        background-color: @color72b352;
+        border-color: @color72b352;
+    }
+    .ant-tabs-nav .ant-tabs-tab:hover {
+        color: #333;
+    }
+    // 黑名单提示
+    .ipieces-cust-type {
+        background: url("@{img-three-level-path}/icon_prompt.png") no-repeat;
+        padding-left: 25px;
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.netloan-detail-container .netloan-detail-content .netloan-menu .netloan-menu-item {
+        margin-right: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: #f4f4f4;
+        padding: 0 20px;
+}
+.ipiece-pass-wrapper {
+    // 审批通过样式
+    .pass-item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .pass-item, .pass-title {
+        font-size: 12px;
+    }
+    .input-wrapper {
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        margin: 12px 6px;
+    }
+    .pass-input, .pass-select {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        text-indent: 16px;
+        // color: #333;
+    }
+    .measure {
+        flex: 0 0 100px;
+    }
+    .pass-already {
+        line-height: 24px;
+        font-size: 15px;
+        // font-weight: bold;
+    }
+}
+.loanInfo-modal{
+    font-size: 14px;
+    .ant-modal-body {
+        max-height: 370px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .ant-modal-header {
+        background: #f7f7f7;
+    }
+}

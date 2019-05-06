@@ -1,0 +1,144 @@
+@import "../../../Assets/Style/themes/default.less";
+@media screen and (min-width:320px) {
+    html {
+        font-size: 85.4px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    html {
+        font-size: 85.4px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 100px;
+    }
+}
+.manager-container,.achievement-container {
+    color: #aaa;
+    display: inline-block;
+    width: 3.8rem;
+    height: 5.66rem;
+    background-image: url('../../../Assets/Images/bg_manager.png');
+    background-size: cover;
+    .manager-content{
+        // border: solid 1px #ccc;
+        width: 3.6rem;
+        height: 4.78rem;
+        margin-top: .54rem;
+        margin-left: .1rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .data-none{
+        position: absolute;
+        height: 30px;
+        line-height: 30px;
+        width: 80px;
+        text-align: center;
+        margin-top: -15px;
+        margin-left: -40px;
+        top: 50%;
+        left: 50%;
+        font-size: 14px;
+        color: #fff;
+    }
+    .manager-p:nth-child(1){//标题栏
+        color: #35b4b7;
+    }  
+    .manager-p:nth-child(-n + 4){//前三
+        color: #4affff;
+    }  
+    .manager-p{
+        width: 3.6rem;
+        height: .43rem;
+        line-height: .43rem;
+        font-size: 12px;
+        span{
+            display: inline-block;
+            height: .43rem;
+            line-height: .43rem;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .change{
+            width:.34rem;
+            height: .43rem;
+            line-height: .43rem;
+        }
+        .changeNumber{//chrome最小字体12px
+            -webkit-text-size-adjust:none;
+            font-size:.1rem;
+        }
+        .rankingNum{
+            width: .3rem;
+            height: .43rem;
+            line-height: .43rem;
+        }
+        .top1,.top2,.top3{
+           vertical-align: middle;
+        }
+        .ranking{width:.3rem;margin-left:.1rem;}
+        .name{width:.76rem;margin-left:.1rem;}
+        .business{width:1rem;margin-left:.1rem;overflow: hidden;}
+        .person{width:.7rem;margin-left:.1rem;overflow: hidden;}
+    }
+    .rise{
+        color: #0feb8b;
+    }
+    .none{
+         color: #fff;
+         font-size: 10px;
+    }
+    .decline{
+        color:#fb365b;
+    }
+}
+.achievement-container{
+    width: 6.7rem;
+    height: 5.66rem;
+    background-image: url('../../../Assets/Images/bg_mounth.png');
+    background-size: cover;
+    .manager-content{
+        width: 6.3rem;
+        height: 4.78rem;
+    }
+    .achievement-content{
+        // margin-top: .1rem;
+        overflow: hidden;
+    }
+    .manager-p{
+        width: 6.3rem;
+        .change{
+            width:.3rem;
+        }
+        .name{
+            width:.9rem;
+            margin-left:0;
+            color: #fff;
+        }
+        .business{
+            width:1rem;
+            margin-left:0;
+            overflow: hidden;
+            color: #fff
+        }
+        .person{
+            color: #fff
+        }
+        .ranking{
+            color: #fff;
+        }
+       
+    }
+    .manager-p-color{
+        .name,.business,.person{
+            color: #4affff;
+        }
+    }
+    .manager-p-title{
+        .change,.name,.business,.ranking{
+            color: #35b4b7;
+        }
+    }
+}

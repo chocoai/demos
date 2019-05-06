@@ -1,0 +1,287 @@
+@import "../../../Assets/Style/themes/default.less";
+.editBaseTmp-container {
+    //单位样式
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .ant-input-group > .ant-input:first-child {
+        border-radius: 4px;
+    }
+    .ant-form-item-label {
+        text-align: left;
+        text-indent: 20px;
+        // width: 86px;
+    }
+    //去除自带样式*
+    // .ant-form-item-required:before {
+    //     content: '';
+    // }
+    .estimate-amount-item{
+        .ant-form-item-label{
+            text-indent: 4px;
+        }
+    }
+    .ipieces-subtitle-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        background-color: #fbfbfb;
+        padding: 0 20px;
+    }
+    .ipieces-subtitle {
+        background-color: #fbfbfb;
+        font-weight: bold;
+        padding-left: 5px;
+        line-height: 38px;
+        // margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+
+    //风险点
+    .ipieces-base-risk {
+        width: 600px;
+        position: relative;
+    }
+    .ipieces-auto-risk-content {
+        width: 100%;
+        text-indent: 1em;
+    }
+    .ipieces-risk-content {
+        width: 100%;
+        text-indent: 1em;
+    }
+    .ipieces-delete {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        transform: translate(50%,-50%);
+        cursor: pointer;
+    }
+    .ipieces-add {
+        width: 50px;
+        cursor: pointer;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .ipieces-add-detail {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0093ff;
+        vertical-align: middle;
+    }
+    .ipieces-add-img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .label-clear .ant-form-item-label{
+        opacity: 0;
+    }
+
+
+    .ipieces-subtitle-attachment {
+        position: relative;
+        background-color: #fbfbfb;
+        padding-right: 10px;
+        color: #5292fc;
+        line-height: 38px;
+        // margin-bottom: 20px;
+        font-size: 12px;
+        text-align: right;
+        cursor: pointer;
+        .file-chose {
+            position: absolute;
+            font-size: 0;
+            top: 0;
+            cursor: pointer;
+            opacity: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .descript-item {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    .des-content {
+        flex: 1;
+        height: 120px;
+        min-width: 200px;
+        color: #333;
+        padding: 0 10px;
+        resize: none;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+    }
+    .des-count {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+    }
+    textarea::-webkit-input-placeholder {
+        color: #ccc;
+    }
+
+    // .preview {
+    //     position: fixed;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     bottom: 0;
+    //     background-color: rgba(0, 0, 0,.3);
+    //     z-index: 10000;
+    // }
+    // .preview-hidden {
+    //     display: none;
+    // }
+    // .preview-carousel {
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     bottom: 0;
+    //     margin: auto;
+    //     width: 450px;
+    //     height: 300px;
+    //     background: #419be0;
+    // }
+    // .preivew-img {
+    //     width: 450px;
+    //     height: 300px;
+    // }
+    // .slick-prev {
+    //     position: absolute;
+    //     left: -100px;
+    //     top: 120px;
+    //     width: 40px;
+    //     height: 40px;
+    //     color: transparent;
+    //     background-color: @color72b352;
+    //     background: url("@{img-three-level-path}/product_icon_last_pressed.png") no-repeat center center;
+    //     background-size: cover;
+    //     border: none;
+    //     user-select: none;
+    //     outline:none;
+    //     cursor: pointer;
+    // }
+    // .slick-next {
+    //     position: absolute;
+    //     right: -100px;
+    //     top: 120px;
+    //     width: 40px;
+    //     height: 40px;
+    //     color: transparent;
+    //     background: url("@{img-three-level-path}/product_icon_next_pressed.png") no-repeat center center;
+    //     background-size: cover;
+    //     border: none;
+    //     user-select: none;
+    //     outline:none;
+    //     cursor: pointer;
+    // }
+    // .preivew-delete {
+    //     position: absolute;
+    //     top: -50px;
+    //     right: -100px;
+    //     cursor: pointer;
+    // }
+    //暂无相关信息
+    .detail-noInfo {
+        padding-left: 30px;
+    }
+    .personal-info-content {
+        padding: 10px 30px;
+    }
+    .upload-file {
+        color: #5292fc;
+        margin-right: 30px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .upload-file-box {
+        position: relative;
+        border: 1px dashed #ddd;
+        // min-height: 60px;
+        line-height: 40px;
+        padding: 0px 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 100%;
+        .file-url {
+            display: inline-block;
+            // width: 50%;
+            // overflow: hidden;
+            vertical-align: middle;
+            // text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        .file-del {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 20px;
+            color: #e87578;
+            cursor: pointer;
+        }
+    }
+    //验证返回
+    //核实信息样式
+    .verified, .unverified, .unknown, .inconsistent {
+        padding-left: 20px;
+        position: relative;
+        margin-left: 10px;
+        font-size: 12px;
+        line-height: 16px;
+        height: 16px;
+    }
+    .verified {
+        color: #43b549;
+    }
+    .unverified, .unknown {
+        color: #888;
+    }
+    .inconsistent {
+        color: #f82335;
+    }
+    .verified:before, .unverified:before, .unknown:before, .inconsistent:before {
+        content: '';
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .verified:before {
+        background: url("@{img-three-level-path}/entrymanagement_icon_verified.png") no-repeat;
+    }
+    .unverified:before, .unknown:before {
+        background: url("@{img-three-level-path}/entrymanagement_icon_unverified.png") no-repeat;
+    }
+    .inconsistent:before {
+        background: url("@{img-three-level-path}/entrymanagement_icon_difference.png") no-repeat;
+    }
+    .subtitle {
+        // overflow: hidden;
+        // white-space: nowrap;
+        // margin: 10px 0;
+        // height: 20px;
+        margin: 10px 0;
+    }
+    .no-subtitle {
+        margin: 10px 0;
+        height: 20px;
+        padding: 0 20px;
+    }
+    .idcard {
+        height: 22px;
+        width: 22px;
+        vertical-align: middle;
+        margin-left: 4px;
+        cursor: pointer;
+    }
+}

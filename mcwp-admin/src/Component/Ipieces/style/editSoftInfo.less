@@ -1,0 +1,126 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.soft-edit-container{
+    margin-top: 20px;
+    //乐观 关注 警惕样式
+    .soft-warn{
+        margin-top: -10px;
+        height: 360px;
+        float: left;
+        .soft-warnInfo{
+            font-size: 14px;
+            color: #555555;
+            display: block;
+            margin: 0px 10px 0px 8px;
+            height: 120px;  
+        }
+    
+    }
+    //选择样式
+    .soft-choice{
+        float: left;
+        //所有选项的通用样式
+        .ant-radio-button-wrapper{
+            transition: background 0.3s ease;
+            width:100px;
+            height:120px;
+            padding: 10px;
+            display:block;
+            text-align: left;
+            border: 1px solid #cecece;
+            color: #888888;
+            font-size: 12px;
+            line-height: 20px;
+            border-radius: 0;
+            span{
+                display: block;
+                word-break: break-all;  
+            }
+        }
+        //所有选项左边框去去掉
+        .ant-radio-button-wrapper:nth-of-type(1),.ant-radio-button-wrapper:nth-of-type(2),.ant-radio-button-wrapper:nth-of-type(3){
+            border-left: 0;
+        }
+        //所有RadioGroup 的第二第三RadioButton 都去掉上边框  第一个RadioButton保留上边框
+        .ant-radio-button-wrapper:nth-of-type(2),.ant-radio-button-wrapper:nth-of-type(3){
+            border-top: 0;
+        }
+        //年龄、婚姻、家庭关系等描述样式
+        .option-describe{
+            display: block;
+            text-align: center;
+            margin: 20px 0px 60px;
+            font-size: 14px;
+            color: #555555;
+        }
+        //选择的hover特效
+        .ant-radio-button-wrapper:nth-of-type(1):hover{
+            background: #d4efdb;
+            color: #333333;
+        }
+        .ant-radio-button-wrapper:nth-of-type(2):hover{
+            background: #fff3da;
+            color: #333333;
+        }
+        .ant-radio-button-wrapper:nth-of-type(3):hover{
+            background: #fddada;
+            color: #333333;
+        }
+        //去除antd选中时所产生的效果
+        .ant-radio-button-wrapper-checked{
+            box-shadow: 0 0 0 0;
+            
+        }
+        .ant-radio-button-wrapper-checked:hover{
+                box-shadow: 0 0 0 0 ;
+        }
+        //项目选中时，添加背景色
+        .checkedHappy,.checkedFocus,.checkedWarn{
+            border: 0;
+            border-right: 1px solid #cecece;
+            color: #333333 !important;
+            
+        }
+        .checkedHappy{
+            background: #26b14c !important;  
+            border-top: 1px solid #cecece;
+            border-bottom: 1px solid #cecece;
+            border-radius: 0;
+        }
+        .checkedFocus{
+            background: #fdc244 !important;
+        }
+        .checkedWarn{
+            background: #f64444 !important;
+        }
+    }
+    //处理前两个选择群的hover效果与居中效果
+    .soft-choice:nth-of-type(2),.soft-choice:nth-of-type(3)  {
+        .ant-radio-group .ant-radio-button-wrapper:hover{
+            background: #f7f7f7 ;
+            color: #888888;
+        }
+        .ant-radio-group .ant-radio-button-wrapper{
+            text-align: center;
+            line-height: 100px;
+        }
+        
+    }
+    //处理第一个选择群的左边框消失
+    .soft-choice:nth-of-type(2)  {
+        .ant-radio-group .ant-radio-button-wrapper{
+            border-left: 1px solid #cecece;
+        }
+        
+    }
+
+}
+
+
+    
+
+
+
+
+
+

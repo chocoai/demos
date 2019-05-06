@@ -1,0 +1,19 @@
+{
+  "name": "mcwp-html-node",
+  "version": "1.0.0",
+  "description": "node中间层",
+  "main": "server.js",
+  "scripts": {
+    "start": "yarn install && node server.js"
+  },
+  "author": "zj",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.12.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-art-template": "^1.0.1",
+    "opn": "^5.1.0",
+    "superagent": "^3.5.2"
+  }
+}

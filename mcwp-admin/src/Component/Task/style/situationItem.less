@@ -1,0 +1,32 @@
+@import "../../../Assets/Style/themes/default.less";
+.task-situation {
+    background-color: @colorfff;
+    padding: 20px;
+    border-radius: 4px;
+    .ant-card {
+        background-color: rgba(178, 223, 219, 0.1);
+        height: 100%;
+        .ant-card-body {
+            padding: 0;
+        }
+        p {
+            color: #666666;
+            &.remind {
+                color: #f33333;
+            }
+            &:nth-child(1) {
+                font-size: 24px;
+                line-height: 1;
+                margin-top: 20px;
+            }
+            &:nth-child(2) {
+                font-size: 14px;
+                line-height: 1;
+                margin-top: 16px;
+            }
+        }
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}

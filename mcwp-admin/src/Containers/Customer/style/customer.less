@@ -1,0 +1,99 @@
+@import "../../../Assets/Style/themes/default.less";
+.customer-container {
+    .ant-table-tbody > tr {
+        cursor: pointer;
+    }
+    .customer-handle {
+        padding: 10px 10px;
+    }
+    .search-top{
+        height: 50px;
+    }
+    .wexin-tip{
+        background: url("@{img-three-level-path}/img-weixin.png") no-repeat;
+        padding-left: 20px;
+    }
+    .common-action-section {
+        .common-btn {
+            margin-right: 16px;
+        }
+    }
+}
+
+/* 搜索区域start  */
+.customer-search {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .ant-input-affix-wrapper {
+        position: absolute;
+        right: 90px;
+        .search-input {
+            height: 36px;
+            background-color: #f3f3f3;
+            border: none;
+            &:focus {
+                box-shadow: 0 0 0 0 rgba(16, 142, 233, 0.2) !important;
+            }
+        }
+    }
+    .search-select {
+        position: absolute;
+        right: 300px;
+        .ant-select-selection--single {
+            height: 36px;
+            line-height: 36px;
+            // background-color: #f3f3f3;
+            // border: none;
+            &:focus {
+                box-shadow: 0 0 0 0 rgba(16, 142, 233, 0.2) !important;
+            }
+        }
+        .ant-select-selection__rendered {
+            line-height: 34px;
+        }
+        .ant-select-selection__placeholder, .ant-select-search__field__placeholder {
+            height: 36px;
+            line-height: 36px;
+            top: 0;
+            margin-top: 0;
+        }
+    }
+    .select-manager{
+        position: absolute;
+        right: 410px;
+        ul li{
+            height: 24px;
+            margin-top: 4px;
+        }
+    }
+    .ant-select-open .ant-select-selection {
+        box-shadow: 0 0 0 0 rgba(16, 142, 233, 0.2) !important;
+    }
+  
+
+}
+/* 搜索区域end  */
+.search-customer-account-manager {
+    margin: 0px 16px 12px 0px;
+    // height: 36px;
+    min-height: 32px;
+    .search-label {
+        // height: 36px;
+        line-height: 36px;
+    }
+    .ant-select-selection {
+        min-height: 36px;
+        // height: 36px;
+        height: auto;
+        line-height: 36px;
+        .ant-select-selection__rendered {
+            line-height: 36px;
+        }
+    }
+}

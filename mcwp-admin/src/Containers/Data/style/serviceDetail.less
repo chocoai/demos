@@ -1,0 +1,100 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.service-detail-container {
+    position: relative;
+    .detail-main {
+        position: relative;
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 40px 60px 60px 40px;
+    }
+    .detail-title {
+        font-size: 18px;
+        color: #333;
+        line-height: 18px;
+        .srv-logo {
+            width: 104px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .srv-name {
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            font {
+                font-size: 14px;
+                color: #333;
+                font-weight: normal;
+            }
+        }
+    }
+    .detail-subtitle {
+        font-size: 14px;
+        line-height: 14px;
+        color: #333;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .detail-intro {
+        font-size: 14px;
+        color: #333;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: justify;
+        text-justify: inter-ideograph;
+    }
+    .detail-feature {
+        li {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 14px;
+            color: #333;
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                margin-bottom: 2px;
+                border-radius: 50%;
+                background-color: #43b44a;
+                opacity: .5;
+                margin-right: 8px;
+            }
+        }
+    }
+    .marked-content {
+        position: relative;
+        box-sizing: border-box;
+        overflow: auto;
+        word-wrap: break-word;
+        word-break: break-all;
+        font-size: 16px;
+        margin-top: 30px;
+        pre {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+        p {
+            display: block;
+            margin:1em 0;
+        }
+        audio, canvas, img, svg, video {
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        ul, menu, dir {
+            display: block;
+            list-style-type: disc;
+            margin:1em 0;
+            padding-left: 40px;
+        }
+    }
+}

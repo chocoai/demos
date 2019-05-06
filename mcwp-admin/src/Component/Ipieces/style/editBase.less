@@ -1,0 +1,233 @@
+@import "../../../Assets/Style/themes/default.less";
+.editBase-container {
+    //单位样式
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .ant-input-group > .ant-input:first-child {
+        border-radius: 4px;
+    }
+    // .ant-form-item-label {
+    //     text-align: left;
+    //     text-indent: 20px;
+    //     // width: 86px;
+    // }
+    //去除自带样式*
+    .ant-form-item-required:before {
+        content: '';
+    }
+    .ipieces-subtitle-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        background-color: #fbfbfb;
+    }
+    .ipieces-subtitle {
+        background-color: #fbfbfb;
+        font-weight: bold;
+        padding-left: 5px;
+        line-height: 38px;
+        // margin-bottom: 20px;
+        font-size: 14px;
+    }
+    // .ipieces-subtitle-left {
+    //     float: left;
+    // }
+
+    //风险点
+    .ipieces-base-risk {
+        width: 600px;
+        position: relative;
+    }
+    .ipieces-auto-risk-content {
+        width: 100%;
+        text-indent: 1em;
+    }
+    .ipieces-risk-content {
+        width: 100%;
+        text-indent: 1em;
+    }
+    .ipieces-delete {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        transform: translate(50%,-50%);
+        cursor: pointer;
+    }
+    .ipieces-add {
+        width: 50px;
+        cursor: pointer;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .ipieces-add-detail {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0093ff;
+        vertical-align: middle;
+    }
+    .ipieces-add-img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .label-clear .ant-form-item-label{
+        opacity: 0;
+    }
+
+    .ipieces-subtitle-attachment {
+        background-color: #fbfbfb;
+        padding-right: 10px;
+        color: #5292fc;
+        line-height: 38px;
+        // margin-bottom: 20px;
+        font-size: 12px;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .descript-item {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    .des-content {
+        flex: 1;
+        height: 120px;
+        min-width: 200px;
+        color: #333;
+        padding: 0 10px;
+        resize: none;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+    }
+    .des-count {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+    }
+    textarea::-webkit-input-placeholder {
+        color: #ccc;
+    }
+}
+.addFileModal-pass-wrapper {
+    // 审批通过样式
+    .pass-item {
+        display: flex;
+        padding-left: 60px;
+        align-items: center;
+    }
+    .pass-item, .pass-title {
+        font-size: 12px;
+    }
+    .pass-item.pass-item-img {
+        align-items: flex-start;
+    }
+    .img-result {
+        margin-top: 12px;
+    }
+    .input-wrapper {
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        margin: 12px 6px;
+    }
+    .input-wrapper-img {
+        height: 110px;
+        width: 280px;
+        display: flex;
+    }
+    .img-info {
+        width: 160px;
+        line-height: 20px;
+        margin-left: 20px;
+    }
+    .upload{
+        padding: 4px 10px;
+        height: 20px;
+        line-height: 20px;
+        position: relative;
+        border: 1px solid #999;
+        text-decoration: none;
+        color: #666;
+    }
+    .change{
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        top: 0;
+        opacity: 0;
+    }
+    .measure {
+        flex: 0 0 100px;
+        color: #5292fc;
+    }
+    .pass-already {
+        line-height: 24px;
+        font-size: 15px;
+        // font-weight: bold;
+    }
+    .select-role {
+        .list {
+            margin: 0 10px 10px 0;
+            display: inline-block;
+            padding: 0px 14px;
+            color: #888;
+            font-size: 12px;
+            background-color: #ebebeb;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+    .listSelected {
+        color: #333 !important;
+        background-color: #c8eaca !important;
+    }
+    .img{
+        width:  120px;
+        height: 120px;
+        position: relative;
+        .file{                  //实际添加照片按钮
+            display: inline-block;
+            opacity: 0;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .addImg{                //添加照片按钮样式
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            position: absolute;
+            z-index: 0;
+            .clickAdd{
+                font-size: 14px;
+                margin-top: 40px;
+            }
+        }
+        .addImgPic {
+            width: 120px;
+            height: 120px;
+        }
+        .iconColse{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 100px;
+            z-index: 100;
+            cursor: pointer;
+        }
+        .previewImg{            // 预览图片样式
+            width:  120px;
+            height: 120px;
+            display: inline-block;
+            border: solid 1px #eeeeee;
+        }
+
+    }
+}

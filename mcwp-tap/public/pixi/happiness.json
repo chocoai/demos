@@ -1,0 +1,47 @@
+{"frames": {
+
+"happiness_1.png":
+{
+	"frame": {"x":0,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"happiness_2.png":
+{
+	"frame": {"x":296,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"happiness_3.png":
+{
+	"frame": {"x":592,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"happiness_4.png":
+{
+	"frame": {"x":888,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+}},
+"animations": {
+	"happiness": ["happiness_1.png","happiness_2.png","happiness_3.png","happiness_4.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "happiness.png",
+	"format": "RGBA8888",
+	"size": {"w":1184,"h":348},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3d5bcc2b4d0592a250d84dd7d4c401e5:76d593745e86dd617a977b4e08b8b175:7437ceb32772eb973206fd04ef156bde$"
+}
+}

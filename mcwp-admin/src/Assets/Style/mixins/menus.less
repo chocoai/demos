@@ -1,0 +1,96 @@
+/** 重定义 start **/
+// 存在menu为一级tab，这些都写在tab中
+
+.ant-menu-item > a {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    &:link, &:active, &:visited, &:hover {
+        text-decoration: none; 
+    }
+}
+
+/* 为页面和功能提供导航的菜单列表 start */
+
+.ant-menu-inline .ant-menu-item:after, 
+.ant-menu-vertical .ant-menu-item:after {
+    border-right: 7px solid @color-369fff;
+}
+.ant-menu-item:hover {
+    background-color: @menu-hovered-color;
+    color: @menu-selected-text-color; 
+}
+
+.ant-menu:not(.ant-menu-horizontal) {
+    color: @menu-item-color;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: @menu-selected-color;
+    color: @menu-selected-color;
+    & > a {
+        padding-left: 20px;
+        color: @submenu-item-color;
+    }
+    &:hover {
+        background-color: @menu-hovered-color;
+    }
+}
+.ant-menu:not(.ant-menu-horizontal) .menu-selected {
+    background-color: @menu-selected-color;
+    color: @menu-selected-text-color;
+    &:hover {
+        background-color: @menu-hovered-color;
+    }
+}
+
+.ant-menu-vertical .ant-menu-item, 
+.ant-menu-vertical .ant-menu-submenu-title {
+    font-size: 14px;
+    color: @submenu-item-color;
+    height: 44px;
+    line-height: 44px;
+    & > a {
+        padding-left: 20px;
+        color: @submenu-item-color;
+    }
+}
+
+.ant-menu-inline .ant-menu-item, 
+.ant-menu-inline .ant-menu-submenu-title {
+    font-size: 14px;
+    color: @submenu-item-color;
+    height: 44px;
+    line-height: 44px;
+    & > a {
+        padding-left: 20px;
+        color: @menu-item-color;
+    }
+}
+
+.ant-menu-item-group-title {
+    font-size: 14px;
+    color: @menu-item-group-title-color;
+    vertical-align: bottom;
+    line-height: 20px;
+    padding: 18px 16px 12px 16px;
+}
+
+.ant-menu-submenu {
+    width: 210px;
+}
+
+.ant-menu-submenu-title {
+    padding-left: 44px !important;
+}
+
+.ant-menu-item-group-list > .ant-menu-item {
+    padding-left: 44px !important;
+    &.funcs-menu {
+        padding-left: 24px !important;
+    }
+}
+
+/* 为页面和功能提供导航的菜单列表 end */

@@ -1,0 +1,53 @@
+.img-info.mult{                      //添加、展示图片部分
+    // width: 80%;
+    // height: 120px;
+    // border: solid #000 1px;
+    .img{
+        width:  120px;
+        height: 120px;
+        margin-bottom: 10px;
+        position: relative;
+        &:nth-of-type(4){
+            margin-left: 0;
+        }
+        .file{                  //实际添加照片按钮
+            display: inline-block;
+            opacity: 0;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .addImg{                //添加照片按钮样式
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            position: absolute;
+            z-index: 0;
+            .clickAdd{
+                font-size: 14px;
+                margin-top: 40px;
+            }
+        }
+        .iconColse{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 100px;
+            z-index: 100;
+            cursor: pointer;
+        }
+        .previewImg{            // 预览图片样式
+            width:  120px;
+            height: 120px;
+            display: inline-block;
+            border: solid 1px #eeeeee;
+        }
+        
+    }
+    .preview{
+        margin-left: 10px;
+    }
+}

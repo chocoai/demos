@@ -1,0 +1,234 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.voice-short {
+    .ant-modal-body {
+        position: relative;
+        padding: 0px 40px 30px 40px;
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+        max-height: 470px;
+        overflow-y: auto;
+    }
+    .voice-classify {
+        position: relative;
+        margin-top: 30px;
+        .voice-time {
+            margin-left: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    }
+    .voice-item {
+        position: relative;
+        margin-top: 20px;
+        padding-left: 28px;
+        line-height: 16px;
+        .voice-order {
+            position: absolute;
+            left: 0px;
+            top: 2px;
+            font-weight: bold;
+        }
+        .voice-icon {
+            background: url("@{img-three-level-path}/icon_voice.png") no-repeat center 2px;
+            background-size: 100%;
+            width: 16px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            &.voice-git {
+                background: url("@{img-three-level-path}/icon_voice.gif") no-repeat center 2px;
+                background-size: 100%;
+            }
+        }
+        .voice-duration {
+            margin-left: 130px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .voice-translate {
+            width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #369fff;
+            margin-left: 30px;
+            line-height: 20px;
+            cursor: pointer;
+            .fail {
+                font-style: normal;
+                font-size: 12px;
+                margin-left: 20px;
+                color: #fc5b5e;
+                cursor: default;
+            }
+        }
+        .voice-name {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .voice-spin {
+            margin-left: 30px;
+            vertical-align: middle;
+            .ant-spin-dot {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    .translated-text {
+        position: relative;
+        margin-top: 10px;
+        padding-left: 28px;
+        line-height: 20px;
+        .voice-order {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+    }
+    //录音播放
+    .audioWrap {
+        display: flex;
+        align-items: center;
+    }
+    .audio {
+        display: flex;
+        //   justify-content: space-between;
+        align-items: center;
+        width: 492px;
+        //   margin: 0 20px 16px 0;
+        // margin-bottom: 16px;
+        border: 1px dotted #ccc;
+        padding: 8px 10px;
+        border-radius: 6px;
+    }
+    .audio-title {
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+    .audio-bar {
+        position: relative;
+        width: 300px;
+        height: 7px;
+        background-color: #eee;
+        vertical-align: 2px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .audio-play, .audio-stop, .audioPre, .audio-next {
+        margin-right: 14px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        user-select: none;
+    }
+
+    .now {
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        height: 7px;
+        border-radius: 7px;
+        width: 0;
+        background: @color-369fff;
+    }
+    .now::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -7px;
+        width: 14px;
+        height: 14px;
+        background-color: @color-369fff;
+        border-radius: 50%;
+    }
+    .start, .end {
+        padding: 0 4px;
+    }
+    .start {
+        padding-left: 10px;
+    }
+}
+
+.audio-mini-container {
+    .audio-out {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    .audio-in {
+        transform: translateX(0);
+        opacity: 1;      
+    }
+    .audio-item {
+        position: fixed;
+        right: 10px;
+        bottom: 180px;
+        width: 200px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+        padding: 6px 10px 8px;
+        z-index: 9999;
+        transition: all 1s ease;
+        .audio-item-title {
+            font-size: 12px;
+            color: #666;
+            line-height: 1;
+            vertical-align: middle;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        .audio-item-bar {
+            position: relative;
+            width: 180px;
+            height: 7px;
+            background-color: #eee;
+            vertical-align: 2px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .audio-item-play, .audio-item-stop, .audio-item-close {
+            vertical-align: middle;            
+            margin-left: 24px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            user-select: none;
+            margin-bottom: 4px;            
+        }
+        .audio-item-close {
+            margin-left: 14px;
+        }
+        .audio-item-now {
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 7px;
+            border-radius: 7px;
+            width: 0;
+            background: @color-369fff;
+        }
+        .audio-item-now::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -7px;
+            // width: 14px;
+            // height: 14px;
+            background-color: @color-369fff;
+            // border-radius: 50%;
+        }
+        .audio-item-start, .audio-item-end {
+            padding: 0 4px;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.modpwd-modal {
+    .ant-modal-body {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+    }
+    .password {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+        height: 34px;
+    }
+	.password-detail {
+		overflow: hidden;
+		height: 0;
+		transition: all .3s ease;
+	}
+	.show {
+		height: 100px;
+	}
+	.password-item {
+		line-height: 20px;
+        // height: 20px;
+		display: flex;
+		align-items: center;
+        width: 300px;
+		// transition: all .3s ease;
+        // overflow: hidden;
+	}
+    .password-reject-item {
+		line-height: 20px;
+		height: 20px;
+        width: 300px;
+		display: flex;
+		align-items: center;
+		transition: all .3s ease;
+        overflow: hidden;
+		color: #f04134;
+    }
+    .pwd-item-hide {
+        height: 0;
+    }
+	.password-img {
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	.password-bar {
+		display: inline-block;
+		width: 60px;
+		height: 6px;
+		border-radius: 2px;
+		background-color: #eee;
+	}
+	.password-bar + .password-bar {
+		margin-left: 2px;
+	}
+    .password-button {
+        margin-top: 10px;
+    }
+}

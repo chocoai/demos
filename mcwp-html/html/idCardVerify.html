@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>身份证核实</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../lib/flexlib/flexible.min.js"></script>
+    <meta name="format-detection" content="telephone = no" />
+    <link rel="stylesheet" type="text/css" href="../css/idCardVerify.css" />
+    <!-- 身份证核实 -->
+</head>
+<body>
+    <div id="idcardVerify" class="idcard-verify"></div>
+    <script src="../js/require.js" data-main="../js/idCardVerify.js"></script>
+    <script type="text/javascript">
+    // OSS身份证扫描
+    function goIDCard(loanCode, enterpriseCode, bizTypeFront) {
+        zdb.tIDCard(loanCode, enterpriseCode, bizTypeFront);
+    }
+    
+    // APP回调
+    function tIDCard(obj) {
+        if(obj.code == 0) {
+            if(obj.bizType == 'LOAN_PERSON_IDENTITY_FRONT') {
+                $('#idcardFront').attr('src', obj.imgSrc);
+                $('#objKeyFront').val(obj.objKey);
+            } else if (obj.bizType == 'LOAN_PERSON_IDENTITY_BACK') {
+                $('#idcardReverse').attr('src', obj.imgSrc);
+                $('#objKeyBack').val(obj.objKey);
+            }
+        } else {
+            alert(obj.msg);
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import "../../../Assets/Style/themes/default.less";
+.productShare-container {
+    position: relative;
+    // padding: 0 20px;
+    // padding-bottom: 60px;
+    .productShare-content{
+        // margin-top: 10px;
+        background-color: #fff;
+        padding-bottom: 60px;
+    }
+    .share-qrcode {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        overflow: hidden;
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .share-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        color: #333;
+        margin-top: 24px;
+    }
+    .share-enter {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+        .enter-label {
+            color: #666;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .share-url {
+            position: relative;
+            display: inline-block;
+            padding: 0 10px;
+            max-width: 200px;
+            line-height: 30px;
+            color: #333;
+            vertical-align: middle;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            margin-left: 5px;
+            font {
+                display: block;
+                height: 30px;
+                overflow: hidden;
+            }
+        }
+        .copy-img {
+            width: 36px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            background: url(../../../Assets/Images/icon_copy.png) no-repeat center center;
+        }
+    }
+}

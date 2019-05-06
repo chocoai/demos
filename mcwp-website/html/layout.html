@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>钱袋金融 专业的小微金融服务提供者 普惠金融.专注小微</title>
+    <meta name="keywords" content="微贷咨询培训，微贷产品设计，互联网营销获客，逻辑交叉验证，大数据信贷风控，高效进件审批，专业贷审服务">
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="chrome=1, ie=edge">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href="../css/index.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="../css/idangerous.swiper2.7.6.css">
+    <script src="../js/idangerous.swiper2.7.6.min.js"></script>
+    {{block 'css'}}{{/block}}
+</head>
+
+<body>
+    <!--S header-->
+    <div class="top-bar">
+        <div class="top-content clear">
+            <div class="top-left">
+                <img src="../images/pc/logonew.jpg" alt="">
+                <!-- <h1 class="top-h1">钱袋金融</h1> -->
+                <!-- <span class="top-span">专业的小微金融服务提供者</span> -->
+            </div>
+            <ul class="top-nav">
+                <li class="top-nav-li">
+                    <a class="top-nav-a" href="/">首页</a>
+                </li>
+                <li class="top-nav-li">
+                    <a class="top-nav-a" href="javascript:;">产品介绍</a>
+                    <ul class="nav-ul">
+                        <li>
+                            <a href="/citizenLoan">市民贷</a>
+                        </li>
+                        <li>
+                            <a href="/microLoan">小微贷</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-nav-li">
+                    <a class="top-nav-a" href="/about">关于钱袋</a>
+                </li>
+                <li class="top-nav-li">
+                    <a class="top-nav-a" href="/join">加入我们</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    {{block 'content'}}{{/block}}
+    <!--E content-->
+    <div class="apply">
+        <form class="apply-form">
+            公司名称:
+            <br>
+            <input class="apply-input orgName" type="text" name="orgName" placeholder="中英文均可，最长18个英文或者9个汉字">
+            <br> 邮箱:
+            <br>
+            <input class="apply-input email" type="text" name="email" placeholder="建议常用邮箱">
+            <br> 联系人:
+            <br>
+            <input class="apply-input linkMan" type="text" name="linkMan" placeholder="中英文均可，最长18个英文或者9个汉字">
+            <br> 联系人岗位:
+            <br>
+            <input class="apply-input linkManPost" type="text" list="works" name="linkManPost" placeholder="请选择">
+            <datalist id="work">
+                <option value="BMW">
+                    <option value="Ford">
+                        <option value="Volvo">
+            </datalist>
+            <br> 联系方式:
+            <br>
+            <input class="apply-input number-input" type="text" name="telephone" placeholder="填写手机号">
+            <input class="apply-input num-btn" type="button" value="发送验证码">
+            <br> 验证码:
+            <br>
+            <input class="apply-input verifyCode" type="text" name="verifyCode" placeholder="填写验证码">
+            <br>
+            <input class="apply-input apply-btn" type="button" value="提交申请">
+            <img class="apply-close" src="../images/pc/close.png" />
+        </form>
+    </div>
+    <div class="error-news">
+        <p class="error-p">111</p>
+        <button class="error-btn">确认</button>
+    </div>
+    <div class="confirm-news">
+        <p class="confirm-p">恭喜您已成功提交申请,请耐心等待系统审核</p>
+        <button class="confirm-btn">确认</button>
+    </div>
+    <div class="bg-hover"></div>
+    <div class="bg-hover1"></div>
+    <!-- 底部 -->
+    <Footer>
+        <div class="footerBox">
+            <div class="footerConcat clear">
+                <div class="footerConLeft">
+                    <div class="contcatEng">CONTACT US</div>
+                    <div class="contcatChin">联系我们</div>
+                    <div class="footDeco clear">
+                        <div class="decorate"></div>
+                        <div class="decorate"></div>
+                    </div>
+                    <ul class="adress">
+                        <li>地址：杭州市文二西路808号西溪壹号17号楼</li>
+                        <li>电话：0571-87759266</li>
+                        <li>传真：0571-87759268</li>
+                    </ul>
+                </div>
+                <div class="footerConRight">
+                    <img src="../images/pc/qrcode.png" alt="">
+                    <div class="tryCon">扫一扫 关注我们</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 地图 -->
+        <div class="mapBox" id="allmap">
+
+        </div>
+    </Footer>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=PNhhMFEMvIgiZ8LO09zFNeBd3pHtnM7r&s=1"></script>
+    <script type="text/javascript" src="../js/wrap.js"></script>
+    <script type="text/javascript" src="../js/config.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    {{block 'script'}}{{/block}}
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "audit" : {
+    "nodeUrl": "/backend/node/userEnterpr/audit",
+    "apiUrl": "https://op.zhudb.com/backend/comm/userEnterpr/audit"
+  },
+  "verifyCode" : {
+    "nodeUrl": "/backend/node/userEnterpr/verifyCode",
+    "apiUrl": "https://op.zhudb.com/backend/comm/userEnterpr/verifyCode"
+  },
+  "PORT": 8180
+}

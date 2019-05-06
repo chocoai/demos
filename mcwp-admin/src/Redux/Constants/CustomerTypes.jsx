@@ -1,0 +1,10 @@
+export const REQ_CUST_SUCCESS = 'REQ_CUST_SUCCESS'; // 获取客户信息成功
+export const REQ_CUST_LIST_SUCCESS = 'REQ_CUST_LIST_SUCCESS'; // 获取客户信息列表成功
+export const SAVE_CUST = 'SAVE_CUST'; // 保存客户信息
+export const REQ_CUST_LOAN_SUCCESS = 'REQ_CUST_LOAN_SUCCESS'; // 获取进件申请列表成功
+export const CUST_TASK_SUCCESS = 'CUST_TASK_SUCCESS'; // 获取进件申请列表成功
+export const EMPTY_CUST_TASK = 'EMPTY_CUST_TASK'; // 清空任务进度数据
+export const MANAGER_LIST = 'MANAGER_LIST'; // 客户经理列表
+export const REQ_CUST_BORROW_SUCCESS = 'REQ_CUST_BORROW_SUCCESS'; // 用户借款列表
+export const PUT_ITEM_ARR = 'PUT_ITEM_ARR'; // itemarr
+export const CLEAR_DATA = 'CLEAR_DATA'; // 清空数据

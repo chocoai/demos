@@ -1,0 +1,82 @@
+{{extend './layout.html'}} 
+
+{{block 'content'}}
+
+<div class="error-news">
+    <p class="error-p">111</p>
+    <button class="error-btn">确认</button>
+</div>
+<div class="confirm-news">
+    <p class="confirm-p">恭喜您已成功提交申请,请耐心等待系统审核</p>
+    <button class="confirm-btn">确认</button>
+</div>
+<div class="bg-hover"></div>
+<div class="bg-hover1"></div>
+<div id="banner">
+    <!-- <ul class="slider-ul">
+        <li class="slider-li">
+            <img class="slider-img" src="../images/mobile/slide_01.png" />
+        </li>
+        <li class="slider-li">
+            <img class="slider-img" src="../images/mobile/slide_02.png" />
+        </li>
+        <li class="slider-li">
+            <img class="slider-img" src="../images/mobile/slide_03.png" />
+        </li>
+        <li class="slider-li">
+            <img class="slider-img" src="../images/mobile/slide_04.png" />
+        </li>
+    </ul> -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="slider-img" src="../images/mobile/slide_01.png" />
+            </div>
+            <div class="swiper-slide">
+                <img class="slider-img" src="../images/mobile/slide_01.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class="pagination"></div>
+    <!-- <ul class="nav clearfix">
+        <li class="nav-li active"></li>
+        <li class="nav-li"></li>
+        <li class="nav-li"></li>
+        <li class="nav-li"></li>
+    </ul> -->
+</div>
+<div class="home">
+    <h2 class="home-title">小微贷</h2>
+    <img class="home-icon" src="../../images/mobile/home_house.png" alt="">
+    <p class="home-intro">小微企业经营性贷款新模式全方位覆盖咨询、风控3+1、运营、IT支持、业务流程五大模块，从人力成本和时间成本两个纬度，优化贷款流程，创造更多价值。期待与中小银行助小微、惠民生，合作共赢。</p>
+    <img class="home-img" src="../../images/mobile/home_01.png" alt="">
+</div>
+<div class="home">
+    <h2 class="home-title">市民贷</h2>
+    <img class="home-icon" src="../../images/mobile/home_citizen.png" alt="">
+    <p class="home-intro">协助银行在区域内落地运营信用贷款业务，解决产品标准设定、业务营销拓展、线上流程操作、全流程风险防控四大运营难题。提优质的普惠金融服务，实现贷款余额、户数、收益快速增长的发展目标。</p>
+    <img class="home-img" src="../../images/mobile/home_02.png" alt="">
+</div>
+<!-- <div class="home">
+    <h2 class="home-title">助贷宝</h2>
+    <img class="home-icon" src="../../images/mobile/home_help.png" alt="">
+    <p class="home-intro">云服务SAAS产品，结合金融与科技，借助大数据、互联网，着力于营销获客、业务培训、产品设计、标准化数据调查和作业流程，打破传统助贷模式，解决银行小微信贷业务中的痛点和难点问题。</p>
+    <img class="home-img" src="../../images/mobile/home_03.png" alt="">
+</div> -->
+<div id="about-qd" class="about-qd">
+    <h2 class="about-qd-title">关于钱袋</h2>
+    <span class="about-qd-en">ABOUT QIANDAI</span>
+    <img class="about-qd-line" src="../../images/mobile/line.png" alt="">
+</div>
+<div class="about-intro">
+    <img class="intro-big" src="../../images/mobile/about_big.png" alt="">
+    <p class="intro-intro">杭州钱袋金融信息服务有限公司（简称：钱袋金服），传承母公司百航科技十余年的金融科技服务商的经验，拥有近200家银行客户积累。自成立以来，获得了国家高新、双软、CMMI3、ISO2001等认证。公司团队均来自金融行业、互联网以及信息技术领域的专家和资深人士组成。</p>
+    <p class="intro-intro">传承之余不忘创新，钱袋金服主要面向中小银行提供零售信贷在线化全流程解决方案，及依靠自己的专业信贷技术和金融科技能力和银行联合运营信用类、抵押类个人信贷产品。</p>
+    <p class="intro-intro">创新之余不忘专注，钱袋金服始终不改初心，致力于通过金融科技的力量助力普惠金融的发展，赋能中小银行发展转型。</p>
+    <img class="intro-sml" src="../../images/mobile/about_sml.png" alt="">
+</div>
+{{/block}}
+{{block 'script'}}
+    <script type="text/javascript" src="../../js/mobile/m-index.js"></script>
+{{/block}}
+

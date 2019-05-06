@@ -1,0 +1,187 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.ipieces-detail-container {
+    .breadcrumb {
+        // padding: 20px 30px auto;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 30px;
+        font-size: 13px;
+        color: @color888;
+        background-color: #fff;
+        &:last-child {
+            color: @color333;
+        }
+    }
+    .result-content {
+        color: #ff4f02;
+        line-height: 34px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .detail-noInfo {
+        padding-left: 10px;
+    }
+    .detail-cancle {
+        left: 60px!important;
+    }
+	.idetail-content {
+		margin-top: 10px;
+		padding: 20px 30px;
+		background-color: #fff;
+		.idetail-title {
+			color: #333;
+			padding: 10px;
+			span {font-size: 14px;}
+		}
+        .detail-tabs {
+            .ant-tabs-ink-bar {
+                height: 0;
+                width: 0;
+            }
+            .ant-tabs-bar {
+                border-bottom: none;
+            }
+            .ant-tabs-tab {
+                padding: 0 10px;
+				text-align: center;
+				line-height: 38px;
+                margin-right: 10px;
+				color: #333;
+				font-size: 14px;
+				background-color: #e5e5e5;
+				border-radius: 5px;
+				border-bottom: none;
+                &.ant-tabs-tab-active {
+                    color: #fff;
+                    background-color: #7b8292;
+                }
+            }
+        }
+		.personal-info {
+			margin: 20px 0 8px 0;
+			background-color: #f7f7f7;
+			padding: 10px 20px;
+			.title {
+				font-size: 14px;
+				color: #333;
+			}
+		}
+		.personal-info-content {
+			padding: 0px 30px;
+            .title {
+                padding: 10px 0px;
+                &.mg-left01 {
+                    margin-left: -10px;
+                }
+            }
+            .add-overdue {
+                display: block;
+                margin-top: 12px;
+            }
+            .ipieces-item {
+                margin-bottom: 12px;
+            }
+            .ipieces-delete {
+                width: 20px;
+                height: 20px;
+                transform: translate(-50%,-50%);
+                cursor: pointer;
+            }
+		}
+        .detail-textarea {
+            flex: 1;
+            height: 100px;
+            width: 100%;
+            color: #333;
+            padding: 10px;
+            padding-bottom: 20px;
+            resize: none;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: none;
+        }
+        .detail-btns {
+            margin-top: 20px;
+        }
+        .detail-submit {
+            position: relative;
+            left: 30px;
+        }
+        .detail-cancle {
+            position: relative;
+            left: 30px;
+            background-color: #eee;
+            border: #eee;
+            color: #333;
+        }
+        .upload-file {
+            float: right;
+            color: #5292fc;
+            margin-right: 30px;
+            cursor: pointer;
+            overflow: hidden;
+            input {
+                position: absolute;
+                font-size: 100px;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+                opacity: 0;
+            }
+        }
+        .upload-file-box {
+            position: relative;
+            border: 1px dashed #ddd;
+            min-height: 60px;
+            padding: 0px 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 100%;
+            .file-url {
+                display: inline-block;
+                width: 50%;
+                overflow: hidden;
+                vertical-align: middle;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+            .file-del {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 20px;
+                color: #e87578;
+                cursor: pointer;
+            }
+        }
+	}
+    // 黑名单提示
+    .ipieces-cust-type {
+        background: url("@{img-three-level-path}/icon_prompt.png") no-repeat;
+        padding-left: 25px;
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.ipieces-detail-container .idetail-content .detail-tabs .ant-tabs-tab {
+        margin-right: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: #f4f4f4;
+        padding: 0 20px;
+}
+.loanInfo-modal{
+    font-size: 14px;
+    .ant-modal-body {
+        max-height: 370px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .ant-modal-header {
+        background: #f7f7f7;
+    }
+}

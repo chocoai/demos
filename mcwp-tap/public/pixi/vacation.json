@@ -1,0 +1,47 @@
+{"frames": {
+
+"vacation_1.png":
+{
+	"frame": {"x":0,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"vacation_2.png":
+{
+	"frame": {"x":296,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"vacation_3.png":
+{
+	"frame": {"x":592,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"vacation_4.png":
+{
+	"frame": {"x":888,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+}},
+"animations": {
+	"vacation": ["vacation_1.png","vacation_2.png","vacation_3.png","vacation_4.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "vacation.png",
+	"format": "RGBA8888",
+	"size": {"w":1184,"h":348},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f8346ca3dbf84fcfb49ec96b98d2f522:e1a4de642e45f7e786773fe959dd1793:964564cbe376465694e0061122ecc307$"
+}
+}

@@ -1,0 +1,117 @@
+@import "../../../Assets/Style/themes/default.less";
+.suggestion-edit-container {
+    .suggestion-content{
+        margin-top:10px;
+        padding: 25px 30px;
+        background-color: #fff;
+    }
+    .description{                  //“问题描述”文字样式
+        width:20%;
+        position: absolute;
+        left: 40px;
+    }
+    .textarea-container{
+        position: relative;
+        display: flex;
+        width: 60%;
+    }
+    .des-count {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+    }
+    .textarea{
+        resize: none;
+        padding: 10px;
+        margin-left: 80px;
+        min-width: 100px;
+        // width: 640px;
+        width: 100%;
+        height: 186px;
+        border:solid 1px #cecece;
+    }
+    textarea::-webkit-input-placeholder {
+        color: #999;
+    }
+    .prompt{                        //提示不少于10字文字样式               
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 640px;
+        margin-left: 80px;
+        color: #333;
+    }
+    .uploadImg{                     //“上传图片”文字样式
+        width:20%;
+        position: absolute;
+        left: 40px;
+    }
+    .img-info{                      //添加、展示图片部分
+        width: 80%;
+        height: 120px;
+        margin-left: 80px;
+        // border: solid #000 1px;
+        .img{
+            width:  120px;
+            height: 120px;
+            position: relative;
+            .file{                  //实际添加照片按钮
+                display: inline-block;
+                opacity: 0;
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                z-index: 99;
+                cursor: pointer;
+            }
+            .addImg{                //添加照片按钮样式
+                display: inline-block;
+                width: 120px;
+                height: 120px;
+                text-align: center;
+                position: absolute;
+                z-index: 0;
+                .clickAdd{
+                    font-size: 14px;
+                    margin-top: 40px;
+                }
+            }
+            .iconColse{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 100px;
+                z-index: 100;
+                cursor: pointer;
+            }
+            .previewImg{            // 预览图片样式
+                width:  120px;
+                height: 120px;
+                display: inline-block;
+                border: solid 1px #eeeeee;
+            }
+            
+        }
+        .preview{
+            margin-left: 10px;
+        }
+    }
+    .submit,.reset{
+        display: inline-block;
+        margin-top:60px;
+        margin-left:30px;
+        width: 100px;
+        height: 40px;
+    } 
+    .submit{
+        margin-left: 30px;
+    }
+    .reset{
+        background-color: #f7f7f7;
+    }
+}
+.suggestion-modal{
+    .confirm-p{
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,125 @@
+@import "../../../Assets/Style/themes/default.less";
+.DAtab-container {
+    .screen{//投屏
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        position: fixed;
+        top: 75%;
+        right: 10px;
+        z-index: 999;
+    }
+    .screenButton{//投屏入口按钮的img
+        margin-top: 12px;
+        margin-left: 2px;
+    }
+    .screenWord{//投屏入口按钮的文字
+        width: 34px;
+        height: 34px;
+        margin-left:3px;
+        margin-top:3px;
+    }
+    .screen-link{
+        color: #fff;
+    }
+    .DAtab-tabs {
+        .marketing{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .proTransform{
+            margin-top:20px;
+            margin-bottom: 60px;
+        }
+        .proHistogram{//漏斗图和浏览量转化率
+            margin: 0 auto;
+            width: 972px;
+            height: 540px;
+            border:solid 1px #000;
+        }
+        .product-analysis{
+            width: 972px;
+            height: 480px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+        .user-analysis {
+            width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            position: relative;
+
+        }
+        .userNum{//对总人数的设置
+            position: absolute;
+            left: 0px;
+            top: 1px;
+            width: 30%;
+            height: 200px;
+            text-align: center;
+        }
+        .none-data{//无数据时的空页面
+            width: 100%;
+            height: 300px;
+            background: #fff;
+            text-align: center;
+        }
+        .none-data-word{
+            margin-top: 20px;
+           font-size: 20px;
+           color: #333;
+        }
+        .nodataBg{
+            margin-top:50px;
+            margin-left:40%;
+            display: block;
+
+        }
+        .numAlign{
+          margin-top: 130px;
+         font-size: 12px;
+         font-weight:bold;
+        }
+        .task-analysis{
+          width: 1000px;
+          margin: 0 auto;
+          margin-bottom: 60px;
+          position: relative;
+        }
+        .taskNum{//对任务总数的设置
+            position: absolute;
+            left: 0px;
+            top: 1px;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+        }
+        .taskAlign{
+          margin-top: 130px;
+         font-size: 12px;
+         font-weight:bold;
+        }
+    }
+    .search-top{
+        height: 60px;
+        line-height: 40px;
+        position: relative;
+        .search-tip{
+            background: url("@{img-three-level-path}/icon_prompt.png") no-repeat;
+            background: cover;
+            padding-left: 25px;
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .ant-switch-checked {
+        background-color: #72b352;
+        border-color: #72b352;
+    }
+}

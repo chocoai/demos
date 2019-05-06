@@ -1,0 +1,18 @@
+.ant-table {
+    .ant-table-thead > tr > th {
+        background: @color-fbfbfb;
+        color: @color-333333;
+        font-weight: bold;
+    }
+    .ant-table-tbody > tr:nth-of-type(even) {
+        background-color: @color-fbfbfb; // 偶数行背景色
+    }
+    .ant-table-tbody > tr > td {
+        border-bottom: none;
+    }
+    &.ant-table-small {
+        .ant-table-body > table {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.valuation-container {
+    .valuation-btn {
+        width: 120px;
+    }
+    .preivew-delete {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      margin-top: 3px;
+      margin-left: 10px;
+    }
+    .remark-text {
+        display: inline-block;
+        overflow: hidden; /* 超出部分隐藏 */
+        white-space: nowrap; /* 不换行 */
+        max-width: 202px;
+        text-overflow: ellipsis; /* 超出部分文字以...显示 */
+    }
+}
+.valuation-modal {
+    .ant-modal-body{
+        overflow: hidden;
+    }
+    .select-valuation {
+        margin-left: 20px;
+    }
+    .valuation-list {
+        margin: 0 10px 10px 0;
+        display: inline-block;
+        padding: 0px 14px;
+        color: #888;
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+        background-color: #ebebeb;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .row-title {
+        padding: 0 20px;
+    }
+    .addtask-first-item {
+        display: flex;
+        width: 100%;
+        float: left;
+        margin-bottom: 30px;
+        line-height: 32px;
+        .addtask-title {
+            line-height: 32px; // 暂时用行高
+            width: 132px;
+        }
+    }
+    .ant-select + .ant-select {
+        margin-left: 10px;
+    }
+    // .addtask-first-item + .addtask-first-item {
+    //     margin-top: 30px;
+    // }
+    .ant-checkbox {
+        width: 80px;
+        height: 30px;
+        background: #ebebeb;
+        border-radius: 15px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .ant-checkbox-checked {
+        background: #e1f1ff;
+    }
+    .ant-checkbox-inner {
+        display: none;
+    }
+    .ant-checkbox-wrapper {
+        width: 80px;
+        height: 30px;
+        position: relative;
+    }
+    .ant-checkbox-wrapper + span, .ant-checkbox + span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #888;
+    }
+    .ant-checkbox-checked + span {
+        color: #333;
+    }
+    .span-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .ant-select-selection {
+        min-height: 36px;
+        height: auto;
+        line-height: 36px;
+    }
+    .ant-select-selection__rendered {
+        line-height: 32px;
+    }
+}

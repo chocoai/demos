@@ -1,0 +1,79 @@
+@import "../../../Assets/Style/themes/default.less";
+.base-container {
+	.return-login {
+		display: block;
+		margin-top: 16px;
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		color: #333;
+	}
+	.login-content {
+		// .login-frame {
+		// 	.ant-form-item {
+		// 		margin-bottom: 0;
+		// 	}
+		// 	.login-form {
+		// 		margin-top: 0;
+		// 	}
+		// }
+	}
+	.password {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.password-detail {
+		overflow: hidden;
+		height: 0;
+		transition: all .3s ease;
+	}
+	.show {
+		height: 120px;
+	}
+	.password-item {
+		line-height: 20px;
+        // height: 20px;
+		display: flex;
+		align-items: center;
+		// transition: all .3s ease;
+        // overflow: hidden;
+	}
+	.password-reject-item {
+		line-height: 20px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		transition: all .3s ease;
+        overflow: hidden;
+		color: #f04134;
+	}
+    .pwd-item-hide {
+        height: 0;
+    }
+	.password-img {
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	.password-bar {
+		display: inline-block;
+		width: 60px;
+		height: 6px;
+		border-radius: 2px;
+		background-color: #eee;
+	}
+	.password-bar + .password-bar {
+		margin-left: 2px;
+	}
+	.repPassword {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.password-reset {
+		.font(@font-size20; @font-weight600);
+		line-height: 20px;
+		padding: 0;
+		margin-top: 20px;
+	}
+}
+
+

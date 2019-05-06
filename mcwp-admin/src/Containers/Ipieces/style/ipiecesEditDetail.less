@@ -1,0 +1,76 @@
+@import "../../../Assets/Style/themes/default.less";
+.ipiecesEditDetail-container {
+    .breadcrumb {
+        // padding: 20px 30px auto;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 30px;
+        font-size: 13px;
+        color: @color888;
+        background-color: #fff;
+        &:last-child {
+            color: @color333;
+        }
+    }
+    .ipieces-edit-content {
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 30px;
+    }
+    .ant-tabs-bar {
+        margin-bottom: 30px;
+        border: none;
+    }
+    .submit {
+        margin-top: 60px 0;
+        background-color: #eee;
+        border: #eee;
+        color: #333;
+    }
+    .save {
+        margin: 60px;
+        background-color: #eee;
+        border: #eee;
+        color: #333;
+    }
+
+    //切换tab样式
+    .ant-tabs-nav .ant-tabs-tab {
+        margin-right: 0;
+        background-color: #f4f4f4;
+        color: #000;
+        transition: none;
+        padding: 8px 10px;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        background-color: #7b8292;
+        color: #fff;
+    }
+    // .ant-tabs-ink-bar {
+    //     background-color: transparent;
+    // }
+    .edit-detail-tabs {
+        margin-bottom: 60px;
+        min-width: 998px;
+    }
+    .edit-detail-tabs .ant-tabs-tab {
+        color: #555;
+        font-size: 14px;
+        background-color: transparent;
+    }
+
+    .edit-detail-tabs .ant-tabs-tab-active {
+        color: #333;
+        border-bottom: 3px solid #71b352;
+        font-weight: bold;
+    }
+    .edit-detail-tabs .ant-tabs-bar {
+        margin-bottom: 20px;
+    }
+    .edit-detail-tabs .ant-tabs-tab {
+        padding: 8px 12px;
+    }
+    .finance-input:focus,.editDetail-top-input:focus {
+        outline-color: #369fff;
+    }
+}

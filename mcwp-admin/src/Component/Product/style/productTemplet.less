@@ -1,0 +1,226 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.productTemplet-container {
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 100%;
+    user-select: none;
+
+    .productTemplet-content {
+        display: flex;
+        width: 50%;
+        position: relative;
+        margin-top: 20px;
+    }
+    .templet-title {
+        flex: 0 0 60px;
+        margin-right: 20px;
+        font-size: 12px;
+    }
+    .templet-wrapper {
+        position: relative;
+        flex: 1;
+    }
+    .templet-content {
+        // flex: 1;
+        width: 100%;
+        height: 200px;
+        min-width: 200px;
+        color: #333;
+        padding: 10px;
+        padding-bottom: 20px;
+        resize: none;
+        overflow: hidden;
+    }
+    .templet-count {
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
+    }
+    .word-style {
+        color: #c55358;
+    }
+
+    .templet-preview, .templet-save, .templet-publishNow {
+        margin-top: 40px;
+        width: 80px;
+    }
+    .templet-save {
+        margin-left: 20px;
+    }
+    .templet-publishNow {
+        margin-left: 20px;
+    }
+    .templet-preview {
+        margin-left: 80px;
+    }
+    .templet-save {
+        background-color: #f0f7ec;
+        border-color: #f0f7ec;
+        color: #333;
+    }
+
+    //去除切换线条
+    .ant-tabs-bar {
+        border-bottom: none;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        color: #000;
+        font-weight: bold;
+    }
+    .ant-tabs-ink-bar {
+        background-color: @color72b352;
+        height: 3px;
+    }
+    .preview {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0,.3);
+        z-index: 10000;
+    }
+    .preview-hidden {
+        display: none;
+    }
+    .preview-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 160px;
+        margin: auto;
+    }
+    .preview-carousel {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 60px;
+        margin: auto;
+        width: 320px;
+        height: 550px;
+        background: #fafafa;
+    }
+    .preivew-img {
+        width: 180px;
+        height: 300px;
+    }
+    // .slick-prev {
+    //     position: absolute;
+    //     left: -100px;
+    //     top: 120px;
+    //     width: 40px;
+    //     height: 40px;
+    //     color: transparent;
+    //     background-color: @color72b352;
+    //     background: url("@{img-three-level-path}/product_icon_last_pressed.png") no-repeat center center;
+    //     background-size: cover;
+    //     border: none;
+    //     user-select: none;
+    //     outline:none;
+    //     cursor: pointer;
+    // }
+    // .slick-next {
+    //     position: absolute;
+    //     right: -100px;
+    //     top: 120px;
+    //     width: 40px;
+    //     height: 40px;
+    //     color: transparent;
+    //     background: url("@{img-three-level-path}/product_icon_next_pressed.png") no-repeat center center;
+    //     background-size: cover;
+    //     border: none;
+    //     user-select: none;
+    //     outline:none;
+    //     cursor: pointer;
+    // }
+    .templet-publish {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100px;
+        margin: auto;
+        bottom: -100px;
+        color: #333;
+        background-color: #fff;
+        outline:none;
+        border: none;
+        user-select: none;
+    }
+    .preivew-delete {
+        position: absolute;
+        top: 20px;
+        right: -100px;
+        cursor: pointer;
+    }
+    //按钮颜色
+    .ant-switch-checked {
+        background-color: @color72b352;
+        border-color: @color72b352;
+    }
+    .ant-tabs-nav .ant-tabs-tab:hover {
+        color: @color72b352;
+    }
+    //恢复默认按钮
+    .back-initial {
+        position: absolute;
+        right: -100px;
+        bottom: 0;
+        background-color: #f0f7ec;
+        border-color: #f0f7ec;
+        color: #333;
+    }
+
+    //预览部分
+    .preivew-detail {
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        position: relative;
+    }
+    .preivew-detail:after {
+        content: '';
+        background: url("@{img-three-level-path}/nav_icon_back_default.png") no-repeat center center;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 16px;
+        top: 16px;
+    }
+    .preivew-detail-title {
+        font-size: 15px;
+        color: #555;
+    }
+    .preivew-detail-content {
+        display: flex;
+    }
+    .preivew-detail-item {
+        width: 80px;
+        padding-left: 16px;
+        color: #333;
+        height: 44px;
+        line-height: 44px;
+        font-weight: bold;
+    }
+    .preivew-detail-input {
+        flex: 1;
+        border: none;
+        user-select: none;
+        outline: none;
+        padding-left: 8px;
+    }
+    .preivew-detail-verify {
+        width: 96px;
+        height: 44px;
+        line-height: 44px;
+    }
+    .preivew-detail-nexxt {
+        width: 176px;
+        height: 44px;
+        margin: 48px auto 0;
+        border: none;
+        font-size: 15px;
+        background-color: #308fe5;
+    }
+}

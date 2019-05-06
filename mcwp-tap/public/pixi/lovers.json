@@ -1,0 +1,47 @@
+{"frames": {
+
+"lovers_1.png":
+{
+	"frame": {"x":0,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"lovers_2.png":
+{
+	"frame": {"x":296,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"lovers_3.png":
+{
+	"frame": {"x":592,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+},
+"lovers_4.png":
+{
+	"frame": {"x":888,"y":0,"w":296,"h":348},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":348},
+	"sourceSize": {"w":296,"h":348}
+}},
+"animations": {
+	"lovers": ["lovers_1.png","lovers_2.png","lovers_3.png","lovers_4.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lovers.png",
+	"format": "RGBA8888",
+	"size": {"w":1184,"h":348},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:80d1912df1aab414fb41932d978d22d3:8d0d8be59f816a2d77fe8285b01892d3:9b380201f6a29ef2f6bd424128d0a5e0$"
+}
+}

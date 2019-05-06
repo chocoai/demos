@@ -1,0 +1,98 @@
+@import "../../../Assets/Style/themes/default.less";
+.add-or-edit-user{
+    .title {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 32px;
+        color: #333;
+        font-size: 12px;
+        background-color: #fff;
+    }
+}
+.add-user-form {
+    padding: 30px 60px 80px 60px;
+    margin-top: 10px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+    .ant-form-item {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .activate {
+        margin-top: 5px;
+        .activate-btn {
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            height: 20px;
+            line-height: 20px;
+            color: #108ee9;
+        }
+        .activate-text {
+            color: #999;
+            font-size: 14px;
+        }
+    }
+    .has-success.has-feedback:after,
+    .has-error.has-feedback:after {
+        right: -40px;
+    }
+    .ant-col-12 {
+        .ant-form-item-control-wrapper {
+            max-width: 260px;
+            margin-left: 20px;
+            height: 32px;
+        }
+    }
+    .user-btns {
+        button {
+            margin-right: 20px;
+        }
+    }
+    .select-role {
+        margin-left: 20px;
+        .list {
+            margin: 0 10px 10px 0;
+            display: inline-block;
+            padding: 0px 14px;
+            color: #888;
+            font-size: 12px;
+            background-color: #ebebeb;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+    .select-role.roleLevel{
+        cursor: not-allowed;
+        .list{
+            pointer-events: none;
+        }
+    }
+    .listSelected {
+        color: #333 !important;
+        background-color: #c8eaca !important;
+    }
+
+    .ant-form-item-label {
+        width: 52px;
+        text-align: left;
+        label {
+            font-size: 13px;
+            color: #333;
+            &:after {
+                content: '';
+                margin: 0;
+            }
+        }
+    }
+    .add-btns {
+        margin-top: 30px;
+        text-align: center;
+        .common-small-btn {
+            margin-right: 20px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import "../../../Assets/Style/themes/default.less";
+.editManageSit-container {
+    //单位样式
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .ant-input-group > .ant-input:first-child {
+        border-radius: 4px;
+    }
+    .ant-form-item-label {
+        text-align: left;
+        text-indent: 10px;
+        // width: 75px;
+    }
+    //去除自带样式*
+    .ant-form-item-required:before {
+        content: '';
+    }
+    .ipieces-subtitle-attachment {
+        background-color: #fbfbfb;
+        padding-right: 10px;
+        color: #89b0fd;
+        line-height: 38px;
+        font-size: 14px;
+        float: right;
+        cursor: pointer;
+        font-weight: normal;
+    }
+    .descript-item {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    .des-content {
+        flex: 1;
+        height: 120px;
+        min-width: 200px;
+        color: #333;
+        padding: 0 10px;
+        resize: none;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+    }
+    .des-count {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+    }
+    textarea::-webkit-input-placeholder {
+        color: #ccc;
+    }
+
+    .ipieces-subtitle {
+        background-color: #fbfbfb;
+        font-weight: bold;
+        padding-left: 5px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+}

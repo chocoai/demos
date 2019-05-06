@@ -1,0 +1,72 @@
+// 宽度、高度、字体颜色、背景颜色、边框颜色、圆角
+.fn-btn(@width: @primary-btn-width; @height: @primary-btn-height; @bgColor: @color-369fff; @color: @color-ffffff; @bdColor: @color-369fff; @bdRadius: @primary-btn-radius; ) {
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: @color;
+    border-color: @bdColor;
+    border-radius: @bdRadius;
+}
+
+// 按钮颜色统一设置
+.ant-btn-primary {
+    background-color: @color-369fff;
+    border-color: @color-369fff;
+}
+
+.ant-btn-primary.disabled,
+.ant-btn-primary[disabled],
+.ant-btn-primary.disabled:hover,
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary.disabled:focus,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary.disabled:active,
+.ant-btn-primary[disabled]:active,
+.ant-btn-primary.disabled.active,
+.ant-btn-primary[disabled].active {
+    color: @color-ffffff;
+    background-color: @color-cbcbcb;
+    border-color: @color-cbcbcb;
+}
+
+// 用于登录界面登录、
+.common-large-btn {
+    .fn-btn(@width: @login-btn-width; @height: @login-btn-height;);
+}
+
+.common-btn {
+    .fn-btn();
+    &.ant-btn:not(.ant-btn-primary) {
+        background-color: @color-eeeeee;
+        border-color: @color-eeeeee;
+        color: @color-333333;
+    }
+    &.cancel-btn {
+        margin-left: 40px;
+    }
+}
+
+// 用于忘记密码界面找回、新建任务界面保存和取消
+.common-small-btn {
+    padding: 0;
+    .fn-btn(@width: @small-btn-width; @height: @small-btn-height;);
+    &.ant-btn:not(.ant-btn-primary) {
+        background-color: @color-eeeeee;
+        border-color: @color-eeeeee;
+        color: @color-333333;
+    }
+}
+
+// 普通按钮激活时、悬浮时的样式
+.ant-btn:not(.ant-btn-primary):hover,
+.ant-btn:not(.ant-btn-primary):active {
+    background-color: @color-e1e1e1;
+    border-color: @color-e1e1e1;
+}
+
+// 主按钮激活时、悬浮时的样式
+.ant-btn-primary:hover,
+.ant-btn-primary:active {
+    background-color: @color-1c7bef;
+    border-color: @color-1c7bef;
+}

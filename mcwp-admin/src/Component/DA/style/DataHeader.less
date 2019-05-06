@@ -1,0 +1,35 @@
+@import "../../../Assets/Style/themes/default.less";
+.DAHeader-container {
+    background-color: @colorfff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .ant-card {
+        // background-color: rgba(178, 223, 219, 0.1);
+        background-color: #fff;
+        height: 100px;
+        width: 100%;
+        border: solid #fff 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ant-card + .ant-card {
+        margin-left: 4px;
+    }
+    .ant-card:hover {
+        box-shadow: none;
+    }
+    .header-item {
+        color: #666;
+        font-size: 14px;
+        word-break: break-all;
+    }
+    .header-money {
+        font-size: 32px;
+        color: #333;
+        word-break: break-all;
+    }
+}

@@ -1,0 +1,1 @@
+appconfig = {"apiUrl":"http://mcwp.test.zhudb.com/backend"}

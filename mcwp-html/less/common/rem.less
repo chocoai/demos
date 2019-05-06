@@ -1,0 +1,278 @@
+@import url(./weui.less);
+@import url(./jquery-weui.less);
+@import url(./flex.less);
+a,
+a:active,
+button,
+input,
+select,
+textarea {
+    -webkit-tap-highlight-color: transparent
+}
+
+body,
+html {
+    height: 100%;
+}
+
+html {
+    //设置通用字体
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; //chrome字体禁止缩放
+    -webkit-text-size-adjust: 100%; //设置初始rem基准值
+    font-size: 20px
+}
+
+body,
+button,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+p,
+select,
+textarea,
+ul {
+    //清楚默认外边距
+    margin: 0;
+    -khtml-user-select:none; /*早期浏览器*/   
+    -moz-user-select:none;/*火狐*/   
+    -ms-user-select:none; /*IE10*/   
+    user-select:none;   
+}
+
+dd,
+dl,
+dt,
+fieldset,
+input,
+li,
+ol,
+td,
+tr,
+ul {
+    //去除默认内边距
+    padding: 0
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    //去除外框
+    outline: 0; //去除聚焦时的阴影 
+    -webkit-user-select:none; /*webkit浏览器*/   
+    -khtml-user-select:none; /*早期浏览器*/   
+    -moz-user-select:none;/*火狐*/   
+    -ms-user-select:none; /*IE10*/   
+    user-select:none;   
+}
+
+a {
+    //去除下划线
+    text-decoration: none
+}
+
+a:active {
+    outline: 0
+}
+
+table {
+    //把表格边框显示为一条单独的边框
+    border-collapse: collapse; //设置相邻单元格的边框间的距离为0
+    border-spacing: 0
+}
+
+button,
+img,
+input {
+    //去除边框
+    border: none
+}
+
+li {
+    //去除默认圆点
+    list-style: none
+}
+
+input {
+    -webkit-user-select: auto; /*webkit浏览器*/   
+    -khtml-user-select: auto; /*早期浏览器*/   
+    -moz-user-select: auto;/*火狐*/   
+    -ms-user-select: auto; /*IE10*/   
+    user-select: auto;   
+}
+
+button,
+input,
+select,
+textarea {
+    //清除ios默认圆角
+    border-radius: 0
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    //统一表单的样子
+    -webkit-appearance: button
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    //统一搜索框的样式
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+.clearfix {
+    zoom: 1;
+    &:after {
+        clear:both;
+        content:'.';
+        display:block;
+        width: 0;
+        height: 0;
+        visibility:hidden;
+    }
+}
+
+.weui-cells_checkbox .weui-icon-checked:before {
+    font-size: .48rem;
+}
+
+.body-bgeee {
+    background-color: #fafafa;
+}
+
+.weui-toast.weui_loading_toast {
+    width: 3rem;
+    min-height: 3rem;
+    
+    .weui-toast_content {
+        font-size: .42rem;
+    }
+}
+
+.weui-icon_toast.weui-loading {
+    margin: .45rem 0 0;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.weui-toast--text {
+    font-size: .48rem;
+    padding: .24rem .6rem;
+    border-radius: 10px;
+    word-break: keep-all;       
+    white-space: nowrap;     
+}
+
+.weui-cells {
+    margin-top: 0;
+    &.weui-cells_radio {
+        margin-top: -1px;
+    }
+    &:before {
+        border-top: none;
+        height: 0;
+    }
+    &:after {
+        border-bottom: none;
+        height: 0;
+    }
+    .weui-cell {
+        padding: .44rem .5rem;
+        font-size: .42rem;
+        line-height: 1;
+        &:before {
+            border-top: none;
+        }
+        .weui-label {
+            width: 2.2rem;
+            color: #333;
+            &.width300 {
+                width: 3rem;
+            }
+        }
+        .weui-cell__hd {
+            height: 1.41176471em;
+            line-height: 1.41176471;
+            color: #333;
+        }
+        .weui-cell__bd {
+            margin-left: .8rem;
+            &.no-margin {
+                margin-left: 0;
+            }
+        }
+        .weui-vcode-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 1.46rem;
+            width: 3.2rem;
+            border-left: none;
+            font-size: .38rem;
+            color: #369fff;
+        }
+        .weui-cell__ft {
+            font-size: .4rem;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.weui-actionsheet__cell {
+    padding: 0;
+    font-size: .48rem;
+    color: #333;
+    height: 1.46rem;
+    line-height: 1.46rem;
+}
+
+.weui-btn {
+    position: relative;
+    margin: 1.6rem auto 0 auto;
+    width: 6rem;
+    height: 1.44rem;
+    line-height: 1.44rem;
+    background-color: #369fff;
+    font-size: .50rem;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.weui-btn_primary:not(.weui-btn_disabled):active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #308fe5;
+}
+
+.choice-icon {
+    position: absolute;
+    right: .64rem;
+    top: 0;
+    height: 1.46rem; 
+    background: url(../images/icon_choice.png) no-repeat center center;
+    background-size: 100%;
+    width: .4rem;
+    display: inline-block;
+}
+

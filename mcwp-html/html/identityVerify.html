@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>身份核实</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../lib/flexlib/flexible.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone = no" />
+    <link rel="stylesheet" type="text/css" href="../css/identityVerify.css" />
+</head>
+<body>
+    <div id="identityVerify" class="identity-verify"></div>
+    <script src="../js/require.js" data-main="../js/identityVerify.js"></script>
+    <script type="text/javascript">
+    // 拍照
+    function goCamera(loanCode, enterpriseCode, bizTypeFront) {
+        zdb.tCamera(loanCode, enterpriseCode, bizTypeFront);
+    }
+    
+    function tCamera(obj) {
+        if(obj.code == 0) {
+            $('#identityFace').css({
+                background: 'url('+ obj.imgSrc +') no-repeat center center',
+                backgroundSize: 'cover'
+            });
+        } else {
+            alert(obj.msg);
+        }
+    }
+
+     // 相册
+    function goPhoto(loanCode, enterpriseCode, bizTypeFront) {
+        zdb.tPhoto(loanCode, enterpriseCode, bizTypeFront);
+    }
+    
+    function tPhoto(obj) {
+        if(obj.code == 0) {
+            $('#identityFace').css({
+                background: 'url('+ obj.imgSrc +') no-repeat center center',
+                backgroundSize: 'cover'
+            });
+        } else {
+            alert(obj.msg);
+        }
+    }
+    </script>
+</body>
+</html>

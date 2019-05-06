@@ -1,0 +1,125 @@
+@import "../../../Assets/Style/themes/default.less";
+.editFinanceBalance-container {
+    .finance-table,.finance-table-title,.finance-title-total, .finance-table-head,.finance-table-subtitle,.finance-title-content, .finance-table-detail {
+        border: 1px solid #cecece;
+    }
+    .finance-table {
+        border-collapse: collapse;
+        display: inline-block;  
+    }
+    .finance-table + .finance-table {
+        border-left: none;
+        margin-left: -1px;
+    }
+    .finance-table-title, .finance-title-total, .finance-table-head,.finance-table-subtitle,.finance-title-content, .finance-table-detail {
+        height: 45px;
+        line-height: 44px;
+        width: 134px;
+        vertical-align: middle;
+    }
+    .finance-content-blank {
+        height: 45px;
+        line-height: 45px;
+        border: 1px solid #cecece;
+    }
+    .finance-head {
+        background-color: #fbfbfb;
+    }
+    .finance-table-title {
+        width: 198px;
+        padding-left: 20px;
+        text-align: left;
+        font-size: 13px;
+        color: #333;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    .finance-title-total {
+        padding-left: 60px;
+        text-align: left;
+        font-size: 13px;
+        color: #333;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    .finance-title-adjust {
+        width: 238px;
+    }
+    .finance-table-head {
+        text-align: right;
+        padding-right: 20px;
+        font-size: 13px;
+        color: #333;
+        font-weight: bold;
+        width: 134px;
+        box-sizing: border-box;
+    }
+    .finance-table-subtitle {
+        padding-left: 40px;
+        text-align: left;
+        font-size: 13px;
+        color: #333;
+        box-sizing: border-box;
+    }
+    .finance-table-subtitle1 {
+        padding-left: 60px;
+        text-align: left;
+        font-size: 13px;
+        color: #333;
+        box-sizing: border-box;
+        border: 1px solid #cecece;
+    }
+    .finance-table-detail {
+        padding-left: 40px;
+        text-align: left;
+        font-size: 13px;
+        color: #333;
+        box-sizing: border-box;
+    }
+    .finance-content-detail {
+        padding-left: 78px;
+    }
+    .finance-input {
+        height: 44px;
+        line-height: 44px;
+        border: none;
+        text-align: right;
+        width: 134px;
+        padding-right: 20px;
+        font-size: 13px;
+        color: #333;
+        border-radius: none;
+        // font-weight: bold;
+    }
+    .finance-input:focus {
+        outline-color: #369fff;
+    }
+    .finance-input::-webkit-input-placeholder {
+        color: #ccc;
+        font-weight: normal;
+    }
+    //去除默认margin-bottom
+    .ant-form-item {
+        margin: 0;
+    }
+    .ant-form-item-control {
+        line-height: 44px;
+    }
+
+    //详细的样式
+    .detail-first,.detail-second {
+        text-align: right;
+        color: #333;
+        font-size: 13px;
+        padding-right: 20px;
+    }
+    .detail-first {
+        font-weight: bold;
+    }
+    //跳转样式
+    .finance-table-link {
+        background-color: #f8fbf6;
+        cursor: pointer;
+    }
+
+}

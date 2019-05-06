@@ -1,0 +1,215 @@
+@import "../../../Assets/Style/themes/default.less";
+.prdocutMarket-container {
+    position: relative;
+    margin-top: 30px;
+    // margin-left: 60px;
+    height: 100%;
+    user-select: none;
+    .content-wrapper {
+        // position: absolute;
+        // top: 70px;
+        // left: 22px;
+        width: 330px;
+        height: 550px;
+        border: 1px solid #e0e0e0;
+        overflow: auto;
+        margin: 0 auto;
+    }
+    .prdocutMarket-title {
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 16px;
+    }
+    //薪优贷
+    .prdocutMarket-subtitle {
+        line-height: 48px;
+        height: 48px;
+        padding-left: 16px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+    }
+    .prdocutMarket-content {
+        display: flex;
+        margin:0 48px;
+        justify-content: space-between;
+    }
+    .prdocutMarket-content-title {
+        color: #666;
+        line-height: 24px;
+    }
+    .prdocutMarket-content-detail {
+        color: #333;
+        font-weight: bold;
+    }
+    .prdocutMarket-content-number {
+        font-size: 20px;
+        color: #ce2a31;
+        font-weight: normal;
+    }
+    //方式类型
+    .prdocutMarket-type {
+        margin: 30px 16px 0;
+        padding: 20px 16px 0;
+        border: 1px dotted #b7b7b7;
+        border-radius: 10px;
+    }
+    .prdocutMarket-type-detail {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+    .prdocutMarket-type-img {
+        width: 12px;
+        height: 12px;
+        margin-top: 4px;
+    }
+    .prdocutMarket-type-detailType {
+        display: inline-block;
+        color: #ce2a31;
+        margin-left: 4px;
+    }
+    .prdocutMarket-type-detailName {
+        color: #333;
+        margin-left: 15px;
+        width: 160px;
+        display: inline-block;
+    }
+    .prdocutMarket-type-list {
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    //放款方式，申请资质，适用人群，温馨提示
+    .prdocutMarket-loanType, .prdocutMarket-apply, .prdocutMarket-eligibility,.prdocutMarket-tip {
+        margin: 24px 16px 0;
+        padding: 30px 16px 16px;
+        border: 1px dotted #b7b7b7;
+        border-radius: 10px;
+        position: relative;
+    }
+    .prdocutMarket-loanType:after, .prdocutMarket-apply:after, .prdocutMarket-eligibility:after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        width: 102px;
+        height: 24px;
+        background: url("@{img-three-level-path}/product_bg_title.png") no-repeat center center;
+    }
+    .prdocutMarket-loanType-title,.prdocutMarket-apply-title , .prdocutMarket-eligibility-title {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        width: 102px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        z-index: 100;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    .prdocutMarket-loanType-content, .prdocutMarket-apply-content, .prdocutMarket-eligibility-content {
+        width: 100%;
+        min-height: 50px;
+        resize: none;
+        overflow: none;
+        padding: 4px 8px;
+        line-height: 20px;
+        border: none;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    .prdocutMarket-tip {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    .prdocutMarket-tip-title {
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        padding: 0 4px;
+        // width: 102px;
+        height: 24px;
+        background-color: #fff;
+        // text-align: center;
+        line-height: 24px;
+        z-index: 100;
+        color: #ce2a31;
+        letter-spacing: 2px;
+    }
+    .prdocutMarket-tip-content {
+        line-height: 20px;
+        font-weight: bold;
+        // text-indent: 2em;
+    }
+
+    .prdocutMarket-ready {
+        width: 192px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 22px;
+        margin: 48px auto 24px;
+        color: #fff;
+        background: url("@{img-three-level-path}/product_btn_application.png") no-repeat center center;
+        text-align: center;
+    }
+    
+
+    .content-bg {
+        height: 220px;
+        width: 320px;
+        background: url("@{img-three-level-path}/product-market.png") no-repeat center center;
+        background-size: cover;
+    }
+    .content-bg::before {
+        content: '';
+        display: table;
+    }
+    .content-ad {
+        position: relative;
+        height: 220px;
+        width: 320px;
+    }
+    .ad-input {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 180px;
+        height: 40px;
+        padding: 5px;
+        border: 1px solid #5292fc;
+        background-color: #06527d;
+        font-size: 19px;
+        color: #fff;
+        border-radius: 8px;
+        outline: none;
+        resize: none;
+        overflow: hidden;
+    }
+    .productMarket-button {
+        margin: 0 auto;
+        width: 180px;
+    }
+    .productMarket-next, .productMarket-save {
+        margin-top: 40px;
+        width: 80px;
+    }
+    .productMarket-save {
+        margin-left: 20px;
+    }
+    .apply-enterpriseName {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ce2a31;
+    }
+    .productMarket-save {
+        background-color: #f0f7ec;
+        border-color: #f0f7ec;
+        color: #333;
+    }
+}

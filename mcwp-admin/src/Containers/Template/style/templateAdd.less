@@ -1,0 +1,93 @@
+@import "../../../Assets/Style/themes/default.less";
+.templateAdd-container{
+    position: relative;
+    .template-input{
+        width: 700px;
+    }
+    .ant-switch-checked {
+        background-color: #72b352;
+        border-color: #72b352;
+    }
+    .template-add-content{
+        margin-top: 10px;
+        padding: 30px;
+        background-color: #fff;
+        font-size: 14px;
+    }
+    .template-add-tip {
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .template-add-detail {
+        // &:nth-child(3),&:nth-child(4),&:nth-child(5) {
+            margin-bottom: 10px;
+        // }
+    }
+    .template-add-title {
+        line-height: 34px;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+    }
+    .template-add-msg {
+        font-weight: bold;
+    }
+    .template-message-container {
+        width: 600px;
+        height: 200px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .template-message {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        resize: none;
+        overflow: hidden;
+        padding: 10px;
+        background-color: transparent;
+        color: transparent;
+        z-index: 100;
+    }
+    .template-message-show {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        resize: none;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 99;
+        border: 1px solid #999;
+    }
+    .sensitive-words {
+        padding-left: 10px;
+        color: #108ee9;
+        cursor: pointer;
+    }
+    .template-default {
+        color: #108ee9;
+        cursor: pointer;
+    }
+    .sensitive-word {
+        color: #fc5b5e;
+    }
+    .template-message-count {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .template-submit {
+        margin-right: 30px;
+    }
+    .template-cancel {
+        background-color: #eee;
+        border: #eee;
+        color: #333;
+    }
+    .message-content {
+        resize: none;
+        width: 700px;
+        height: 300px;
+        padding: 10px;
+    }
+}

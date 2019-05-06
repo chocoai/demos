@@ -1,0 +1,29 @@
+@import "../../../Assets/Style/themes/default.less";
+.versionUp-container { 
+    .versionUp-content{
+        width: 90%;
+        height: 500px;
+        background: #fff;
+        text-align: center;
+        margin: 20px auto;
+        padding-top: 120px;
+        position: relative;
+    }
+    .versionUp-content::before{
+        content: "";
+        width: 64px;
+        height: 64px;
+        background: url("@{img-three-level-path}/tip_img_fail.png") no-repeat;
+        position: absolute;
+        top: 40px;
+        left: 46%;
+    }
+    .versionUp-p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .versionUp-a{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,135 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.customer-export {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: #fff;
+    min-height: 470px;
+    .export-title {
+        font-size: 14px;
+        color: #333;
+    }
+    .export-main {
+        padding: 0px 30px;
+    }
+    .customer-upload {
+        position: relative;
+        margin-top: 20px;
+        height: 36px;
+        line-height: 36px;
+        .input-path {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 560px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            color: #333;
+        }
+        .file {
+            position: relative;
+            vertical-align: middle;
+            padding: 4px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #1c7bef;
+            overflow: hidden;
+            display: inline-block;
+            &:hover {
+                color: blue;
+            }
+            .input-file {
+                position: absolute;
+                font-size: 100px;
+                right: 0;
+                top: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                cursor: pointer;
+            }
+        }
+    }
+    .export-warn {
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+    }
+    .export-tmp-warn {
+        font-size: 14px;
+        color: #666;
+        margin-top: 60px;
+    }
+    .export-tmp {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #5292fc;
+        display: inline-block;
+    }
+    .export-btn {
+        margin-top: 60px;
+          .handle-btn {
+            font-size: 13px;
+            width: 100px;
+            height: 36px;
+            border-radius: 4px;
+            &.cancel-btn {
+                margin-left: 20px;
+                background-color: #f3f3f3;
+                border: none;
+                color: #333;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+    .exporting-title {
+        margin-top: 10px;
+        margin-left: 30px;
+        font-size: 14px;
+        color: #333;
+    }
+    .exporting-progess {
+        margin-top: 16px;
+        padding: 0px 30px;
+        max-width: 912px;
+    }
+    .ant-progress-inner {
+        background-color: #ddd;
+    }
+    .ant-progress-bg {
+        background-color: #72b352;
+    }
+    .complete-img {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .complete-text {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+        .t-title {
+            font-size: 16px;
+            color: #333;
+        }
+        .t-count {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            span {
+                color: #bc262d;
+            }
+        }
+    }
+    .resave-data {
+        display: block;
+        margin-top: 40px;
+        margin-left: 80px;
+        font-size: 16px;
+        color: #5292fc;
+    }
+}

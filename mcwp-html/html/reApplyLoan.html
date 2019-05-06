@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请贷款</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../lib/flexlib/flexible.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone = no" />
+    <link rel="stylesheet" type="text/css" href="../css/reApplyLoan.css" />
+</head>
+<body class="body-bgeee">
+    <div class="apply-loan">
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入姓名">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">联系方式</label></div>
+                <div class="weui-cell__bd">
+                    <input id="mobile" class="weui-input" type="tel" placeholder="请输入手机号" maxlength="11">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">验证码</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入验证码">
+                </div>
+                <div class="weui-cell__ft">
+                    <button id="getCode" class="weui-vcode-btn">获取验证码</button>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">借款用途</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input id="picker" class="weui-input" placeholder="请选择">
+                </div>
+                <div class="weui-cell__ft">
+                    <div id="openPicker" class="picker-icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn weui-btn_primary">下一步</div>
+    </div>
+    <script src="../js/require.js" data-main="../js/reApplyLoan.js"></script>
+</body>
+</html>

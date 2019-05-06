@@ -1,0 +1,193 @@
+@import "../../../Assets/Style/themes/default.less";
+.loanDetail-container {
+    position: relative;
+	
+    
+    
+}
+.loan-detail {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 20px 30px;
+    .botton-list {
+        overflow: hidden;
+    }
+    .survey-title {
+        color:#108ee9;
+        text-align: right;
+    }
+    .idcard {
+        height: 22px;
+        width: 22px;
+        vertical-align: middle;
+        margin-left: 4px;
+        cursor: pointer;
+    }
+    .report-icon {
+        margin-right: 3px;
+        font-size: 16px;
+        vertical-align: text-bottom;
+    }
+    .survey-report-content {
+        border: 1px dashed #B7B7B7;
+        border-radius: 5px;
+        padding-left: 13px;
+        .report-item {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    }
+    .client-title , .survey-title , .loan-title {
+        font-size: 14px;
+        margin: 10px 0;
+        
+    }
+    .loan-title,.client-title {
+        font-weight: 600;
+    }
+    .content-item {
+        margin:10px 0;
+    }
+    .loan-apply-content , .client-info-content {
+        padding-left: 30px;
+    }
+    // 
+    .client-info, .loan-apply {
+        
+        margin-top: 15px;
+        padding-left: 15px;
+    }
+    // 与身份信息不一致
+    .unconsistent {
+        color: #f82335;
+    }
+    .consistent {
+        color: #66CD00;
+    }
+    .unkonwn {
+        color: #919191;;
+    }
+    .consistent , .unconsistent, .unkonwn{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    //调查报告中审批拒绝与审批通过
+    .reject-appro {
+        color: #f82335;
+        font-size: 14px;
+    }
+    .pass-appro {
+        color: #66CD00;;
+        font-size: 14px;
+    }
+   
+    .submit-appro {
+        margin-top: 30px;
+        .permit-btn {
+            background: #43b549;
+            color: #fff;
+            border:none;
+        }
+        .refuse-btn {
+            margin-left: 30px;
+            background: #f82335;
+            color: #fff;
+        }
+    }
+    //验证返回
+    //核实信息样式
+    .verified, .unverified, .unknown, .inconsistent {
+        padding-left: 20px;
+        position: relative;
+        margin-left: 20px;
+        font-size: 12px;
+        line-height: 16px;
+        height: 16px;
+    }
+    .verified {
+        color: #43b549;
+    }
+    .unverified, .unknown {
+        color: #888;
+    }
+    .inconsistent {
+        color: #f82335;
+    }
+    .verified:before, .unverified:before, .unknown:before, .inconsistent:before {
+        content: '';
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .verified:before {
+        background: url("@{img-three-level-path}/entrymanagement_icon_verified.png") no-repeat;
+    }
+    .unverified:before, .unknown:before{
+        background: url("@{img-three-level-path}/entrymanagement_icon_unverified.png") no-repeat;
+    }
+    .inconsistent:before {
+        background: url("@{img-three-level-path}/entrymanagement_icon_difference.png") no-repeat;
+    }
+    .subtitle {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 10px 0;
+    }
+    .loan-subtitle-attachment {
+        color: #89b0fd;
+        line-height: 38px;
+        font-size: 14px;
+        text-align: right;
+        cursor: pointer;
+    }
+    .loan-subtitle-attachment + .loan-subtitle-attachment {
+        margin-left: 10px;
+    }
+}
+// 模态框主体样式样式
+.reject-modal{
+    position: relative;
+    height: 160px;
+    width: 400px!important;
+    .ant-modal-body {
+        position: relative;
+        height: 170px;
+        .reason-content {
+            position: absolute;
+            left: 120px;
+            top: 30px;
+            padding-left: 5px;
+            resize: none;
+            border-radius: 5px;
+            width: 230px;
+            height: 130px;
+        }
+        .pass-content {
+            margin-left: 25px;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .reject-reason {
+            position: absolute;
+            top: 30px;
+            left: 50px;
+        }
+        .reason-content-foot {
+            position: absolute;
+            right: 55px;
+            top: 135px;
+        }
+    }
+    // 模态框底部样式
+    .ant-modal-footer {
+        text-align: center;
+        padding: 15px 15px 30px;
+        border: 0;
+        .ant-btn-lg {
+            float: none !important;
+        }
+    }
+}

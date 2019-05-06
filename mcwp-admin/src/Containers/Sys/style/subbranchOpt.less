@@ -1,0 +1,44 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.subbranch-opt {
+    .ant-form-item-label {
+        label:before {
+            display: inline-block;
+            margin-right: 4px;
+            content: "*";
+            font-family: SimSun;
+            line-height: 1;
+            font-size: 12px;
+            color: #f04134;
+        }
+    }
+    .ant-time-picker {
+        width: 46%;
+    }
+    .end-time-picker {
+        float: right;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 10px;
+            background-color: #c0c0c0;
+            position: absolute;
+            top: 15px;
+            left: -15px;
+        }
+    }
+    .bank-address-desc {
+        margin-top: 20px;
+    }
+    #allmap {
+        width: 100%;
+        height: 360px;
+        padding-left: 10px;
+        margin-top: 100px;
+    }
+    .BMapLabel {
+        transform: translate(-50%, -110%);
+        border-radius: 6px;
+    }
+
+}

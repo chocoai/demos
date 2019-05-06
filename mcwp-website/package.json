@@ -1,0 +1,43 @@
+{
+  "name": "mcwp-html",
+  "version": "1.0.0",
+  "description": "基于zepto + dot + fastclick + gulp搭建纯静态页面型前端工程解决方案模板",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"yarn run hot\" \"cross-env NODE_ENV=development nodemon node/server\"",
+    "test": "yarn install && gulp build --env test",
+    "advance": "yarn install && gulp build --env advance",
+    "dist": "yarn install && gulp build --env production",
+    "node": "yarn install && cross-env NODE_ENV=production node server",
+    "hot": "gulp --env development"
+  },
+  "author": "sosout",
+  "license": "ISC",
+  "devDependencies": {
+    "art-template": "^4.12.2",
+    "body-parser": "^1.17.2",
+    "browser-sync": "^2.13.0",
+    "concurrently": "^3.5.0",
+    "cross-env": "^5.0.1",
+    "express": "^4.15.3",
+    "express-art-template": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rev": "^7.1.0",
+    "gulp-rev-collector": "^1.0.4",
+    "gulp-sequence": "^0.4.5",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0",
+    "nodemon": "^1.17.5",
+    "opn": "^5.1.0",
+    "superagent": "^3.5.2"
+  }
+}

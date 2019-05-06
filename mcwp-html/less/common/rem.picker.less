@@ -1,0 +1,57 @@
+.weui-picker-modal {
+    height: 7.68rem;
+    background: #fff;
+    .toolbar {
+        font-size: .48rem;
+        .toolbar-inner {
+            height: 1.44rem;
+        }
+        .picker-button {
+            height: 1.44rem;
+            line-height: 1.44rem;
+            width: 1.96rem;
+            text-align: center;
+            color: #369fff;
+            z-index: 1;
+            padding: 0 .0rem;
+        }
+        .cancel-button {
+            height: 1.44rem;
+            line-height: 1.44rem;
+            padding: 0 .5rem;
+            color: #369fff;
+        }
+        .title {
+            font-size: .48rem;
+            font-weight: normal;
+            line-height: 1.44rem;
+        }
+    }
+    .picker-item.picker-selected {
+        border: none;
+    }
+    .picker-items {
+        font-size: .60rem;
+        height: 6.24rem;
+        .picker-item {
+            height: 1.20rem;
+            line-height: 1.20rem;
+        }
+    }
+    .weui-cell__bd {
+        z-index: 10;
+    }
+    .weui-cell__ft {
+        position: relative;
+        z-index: 1;
+        width: 1.68rem;
+        height: 1.46rem;
+    }
+    .picker-center-highlight {
+        height: 1.20rem;
+        margin-top: -.60rem;
+        &:after, &:before {
+            height: 0;
+        }
+    }
+}

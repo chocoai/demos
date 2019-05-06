@@ -1,0 +1,69 @@
+@import "../../../Assets/Style/themes/default.less";
+.loanIndex-container {
+    background-color: #fff;
+}
+//不知道这里会不会影响其他模块Modal的样式  待定  运用于 creditLine detailOrAppro 
+.settled-modal {
+    width: 400px !important;
+}
+.loan-confirm-modal {
+    .input-credit,.ant-calendar-picker{
+        // margin-left: 25px;
+    }
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .ant-modal-body{
+        padding: 16px 30px;
+    }
+    .loan-confirm-item{
+        display: flex;
+        margin-bottom: 20px;
+        .loan-confirm-span{
+            min-width: 85px;
+        }
+    }
+    .loan-confirm-item4{
+        .ant-input-group-wrapper{
+            width: 74%;
+        }
+    }
+    .secure-title {
+        margin-top: 20px;
+        // margin-left: 25px;
+        font-size: 14px;
+    }
+    .closed-title {
+        margin-top: 20px;
+        margin-left: 25px;
+        font-size: 14px;
+    }
+    .repament-date {
+        margin: 15px 0;
+    }
+    .contract-date {
+        margin: 15px 0 15px 25px;
+    }
+    .input-credit {
+        width: 200px;
+    }
+    .icon-credit {
+        color:#AEE;
+        font-size: 14px;
+        margin-right: 3px;
+    }
+    .bank-card {
+        // margin-left: 25px;
+        width: 337px;        
+    }
+}
+.ant-modal-footer {
+    text-align: center;
+    padding: 15px 15px 30px;
+    border: 0;
+    .ant-btn-lg {
+        float: none !important;
+        margin:10px 10px;
+    }
+}

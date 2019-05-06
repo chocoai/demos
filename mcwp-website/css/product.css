@@ -1,0 +1,307 @@
+.productWarpper{
+    width: 968px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+.productTop.citiPro{
+    width: 100%;
+    height: 517px;
+    padding-top: 186px;
+    background: url(../images/pc/citibac.png) no-repeat center/cover;
+    box-sizing: border-box;
+}
+.productTop.mortPro{
+    width: 100%;
+    height: 515px;
+    padding-top: 170px;
+    background: url(../images/pc/mortbac.png) no-repeat center/cover;
+    box-sizing: border-box;
+}
+.productTop.helpPro{
+    width: 100%;
+    height: 514px;
+    padding-top: 166px;
+    background: url(../images/pc/helpbac.png) no-repeat center/cover;
+    box-sizing: border-box;
+}
+.productTopTitle{
+    font-size: 27px;
+    color: #4c4948;
+    font-weight: bold;
+    text-align: center;
+}
+.productTopTitle::after{
+    display: inline-block;
+    content: "";
+    width: 64px;
+    height: 8px;
+    border-top:2px solid #4c4948;
+    margin-left: 24px;
+}
+.productTopTitle::before{
+    display: inline-block;
+    content: "";
+    width: 64px;
+    height: 8px;
+    border-top:2px solid #4c4948;
+    margin-right: 24px;
+}
+.productTopCon{
+    padding-top: 52px;
+}
+.productTopCon p{
+    text-align: center;
+    font-size: 16px;
+    color: #4c4948;
+    line-height: 27px;
+}
+/* 市民贷部分 */
+.cityProductCenter{
+    padding: 38px 0 28px;
+}
+.cityProCenRight{
+    float: right;
+}
+.cityProCenLeft{
+    float: left;
+    padding: 18px 0 0 58px;
+    position: relative;
+}
+.cityProTip{
+    width: 30px;
+    height: 2px;
+    background: #54c3f1;
+    position: absolute;
+    left: 0;
+    top: 33px;
+}
+.cityProLeftTitle{
+    font-size: 24px;
+    color: #4c4948;
+    font-weight: bold;
+}
+.cityProLeftCon{
+    padding-top: 28px;
+}
+.cityProLeftCon p{
+    font-size: 16px;
+    color: #4c4948;
+    line-height: 27px;
+}
+.cityAdvan{
+    padding-top: 14px;
+}
+.cityAdvan li{
+    width: 242px;
+    float: left;
+    text-align: center;
+}
+.cityAdvan li .cityAdvanCon{
+    padding-top: 20px;
+}
+.cityAdvan li .cityAdvanCon h5{
+    font-size: 16px;
+    color: #4c4948;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.cityAdvan li .cityAdvanCon p{
+    font-size: 16px;
+    color: #4c4948;
+    line-height: 28px;
+}
+.cityProductBottom{
+    padding: 70px 0 84px;
+}
+.cityProBotLeft{
+    float: left;
+}
+.cityProBotRight{
+    float: right;
+    position: relative;
+}
+.cityProRightTitle{
+    font-size: 24px;
+    color: #4c4948;
+    font-weight: bold;
+}
+.cityProRightCon{
+    padding-top: 50px;
+}
+.cityProRightCon p{
+    font-size: 16px;
+    color: #4c4948;
+    line-height: 27px;
+    width: 380px;
+}
+.cityProTip2{
+    width: 108px;
+    height: 4px;
+    background: #54c3f1;
+    position: absolute;
+    top: 14px;
+    left: -148px;
+}
+/* 房抵贷部分 */
+.mortProCenLeft{
+    float: left;
+}
+.mortProCenRight{
+    float: left;
+    padding: 54px 0 0 16px;
+}
+.mortProCenRight li{
+    /* margin-bottom: 30px; */
+}
+.mortProCenRight li img{
+    float: left;
+}
+.mortProCenRight li .mortProBox{
+    float: left;
+    padding: 0 0 32px 42px;
+    /* line-height: 50px; */
+    color: #4c4948;
+}
+.mortProBoxTitle{
+    font-size: 18px;
+   margin-bottom: 5px;
+}
+.mortProBoxCon{
+    font-size: 16px;
+}
+.mortProBottom{
+    width: 100%;
+    height: 372px;
+    background: url(../images/pc/mortimg.jpg) no-repeat left/contain #eee;
+    margin-bottom: 84px;
+    padding: 104px 62px 0 485px;
+    box-sizing: border-box;
+    position: relative;
+}
+.mortProBottom p{
+    font-size: 16px;
+    color: #4c4948;
+    line-height: 27px;
+}
+.mortProBotTitle{
+    position: absolute;
+    top: 210px;
+    left: 216px;
+    font-size: 36px;
+    color: #54c3f1;
+    font-weight: bold;
+}
+.mortProBotTitle::after{
+    content: "";
+    display: block;
+    width: 92px;
+    border-bottom: 6px solid #54c3f1;
+   padding-top: 10px;
+   margin-left: 50px;
+}
+/*助贷宝部分*/
+
+.help_advantage li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    height: 300px;
+}
+.help_advantage li h5{
+    font-size: 16px;
+    color: #4c4948;
+    font-weight: bold;
+}
+.help_advantage li:nth-of-type(1) h5{
+    margin-bottom: 38px;
+}
+.help_advantage li:nth-of-type(2) h5{
+    margin-bottom: 28px;
+}
+.help_advantage li:nth-of-type(3) h5{
+    margin-bottom: 52px;
+}
+.help_advantage li:nth-of-type(4) h5{
+    margin-bottom: 40px;
+}
+.help_advantage li:nth-of-type(5) h5{
+    margin-bottom:68px;
+}
+.help_advantage li:nth-of-type(6) h5{
+    margin-bottom: 52px;
+}
+.help_advantage li p{
+    font-size: 15px;
+    color: #4c4948;
+    line-height: 30px;
+    margin: auto;
+}
+.help_advantage li img{
+    width: 42px;
+    height: 42px;
+    margin-bottom: 22px;
+}
+.help_adv_box{
+    padding-top: 54px;
+    padding-bottom: 48px;
+}
+.help_adv_box h1{
+    font-size: 33px;
+    color: #4c4948;
+    text-align: center;
+    font-weight: bold;
+}
+.help_adv_box h2{
+    font-size: 28px;
+    color: #4c4948;
+    text-align: center;
+    padding: 22px 0;
+}
+.help_case_box{
+    padding-bottom: 84px;
+}
+.help_case_img img{
+    width:319px;
+    height: 210px;
+}
+.help_case_img{
+    float: left;
+}
+.help_case_right{
+    float: left;
+    padding-left: 30px;
+    width: 619px;
+    /*width: 768px;*/
+    height: 212px;
+    background: url(../images/pc/help_casebg.jpg) no-repeat left/cover;
+}
+.help_case_right h1{
+    font-size: 28px;
+    color: #4c4948;
+    font-weight: bold;
+}
+.help_case_right h2{
+    font-size: 25px;
+    color: #4c4948;
+    padding: 6px 0 16px 0;
+}
+.help_case_right p{
+    font-size: 16px;
+    color: #4c4948;
+    line-height: 25px;
+}
+.help_lantiao{
+    width: 260px;
+    height: 4px;
+    background:#54c3f1;
+    position: absolute;
+    bottom: 19%;
+    left: 30%;
+    z-index: 15;
+}
+.risk-warp{
+    text-align: center;
+}
+.risk-warp img{
+    width: 968px;
+}

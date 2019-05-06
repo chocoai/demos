@@ -1,0 +1,14 @@
+{
+  "development": {
+    "apiUrl": "http://op.test.zhudb.com/backend"
+  },
+  "test": {
+    "apiUrl": "http://mcwp.test.zhudb.com/backend"
+  },
+  "advance": {
+    "apiUrl": "backend"
+  },
+  "production": {
+    "apiUrl": "http://op.test.zhudb.com/backend"
+  }
+}

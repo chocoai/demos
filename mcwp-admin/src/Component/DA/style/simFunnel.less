@@ -1,0 +1,112 @@
+@import "../../../Assets/Style/themes/default.less";
+.simfunnel-container {
+    margin: 0px auto;
+    .simfunnel-title {
+        font-weight: bold;
+        color: #333;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .trapezoidal {
+        position: relative;
+        height: 200px;
+        margin-top: -84px;
+        border-right: 37px solid transparent;
+        border-left: 37px solid transparent;
+        &:first-child {
+            margin-top: 0;
+        }
+        &.browse {
+            width: 298px;
+            border-top: 114px solid #48b24f;
+        }
+        &.pieces {
+            width: 224px;
+            border-top: 114px solid #4aa9f7;
+        }
+        &.credit {
+            width: 150px;
+            border-top: 114px solid #f5ca40;
+        }
+        &.letter {
+            width: 75px;
+            border-top: 114px solid #f4524d;
+        }
+        .trapezoidal-count {
+            position: absolute;
+            top: -66px;
+            left: -100px;
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            &:after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                height: 1px;
+                width: 50px;
+                top: 10px;
+                right: -40px;
+            }
+            &.browse-count {
+                color: #48b24f;
+                &:after {
+                    background-color: #48b24f;
+                }
+            }
+            &.pieces-count {
+                color: #4aa9f7;
+                &:after {
+                    background-color: #4aa9f7;
+                }
+            }
+            &.credit-count {
+                color: #f5ca40;
+                &:after {
+                    background-color: #f5ca40;
+                }
+            }
+            &.letter-count {
+                color: #f4524d;
+                &:after {
+                    background-color: #f4524d;
+                }
+            }
+        }
+        .trapezoidal-rate {
+            position: absolute;
+            top: -124px;
+            right: -116px;
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            &:after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                height: 1px;
+                width: 20px;
+                top: 10px;
+                left: -10px;
+            }
+            &.pieces-rate {
+                color: #4aa9f7;
+                &:after {
+                    background-color: #4aa9f7;
+                }
+            }
+            &.credit-rate {
+                color: #f5ca40;
+                &:after {
+                    background-color: #f5ca40;
+                }
+            }
+            &.letter-rate {
+                color: #f4524d;
+                &:after {
+                    background-color: #f4524d;
+                }
+            }
+        }
+    }
+}

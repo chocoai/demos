@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>助贷宝微贷作业管理平台</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!-- start Dplus -->
+    <script type="text/javascript">
+    !function(a,b){if(!b.__SV){var c,d,e,f;window.dplus=b,b._i=[],b.init=function(a,c,d){function g(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]),a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var h=b;for("undefined"!=typeof d?h=b[d]=[]:d="dplus",h.people=h.people||[],h.toString=function(a){var b="dplus";return"dplus"!==d&&(b+="."+d),a||(b+=" (stub)"),b},h.people.toString=function(){return h.toString(1)+".people (stub)"},e="disable track track_links track_forms register unregister get_property identify clear set_config get_config get_distinct_id track_pageview register_once track_with_tag time_event people.set people.unset people.delete_user".split(" "),f=0;f<e.length;f++)g(h,e[f]);b._i.push([a,c,d])},b.__SV=1.1,c=a.createElement("script"),c.type="text/javascript",c.charset="utf-8",c.async=!0,c.src="//w.cnzz.com/dplus.php?id=1264459159",d=a.getElementsByTagName("script")[0],d.parentNode.insertBefore(c,d)}}(document,window.dplus||[]),dplus.init("1264459159");
+    </script><!-- end Dplus -->
+</head>
+
+<body>
+    <!--[if lte IE 8]>
+        <style>
+            html,body{padding:0;margin:0;background-color: #e6e6e6;font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+            .versionUp-header{
+                position: relative;
+                height: 120px;
+                width: 100%;
+                line-height: 120px;
+                background-color: #ffffff;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                overflow: hidden;
+                padding: 0 50px;
+            }
+            .versionUp-logo{
+                background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAgCAMAAAClz5+XAAAAeFBMVEUAAABys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1Jys1JCU695AAAAJ3RSTlMADodEme9meHerzDNsEeEs+b3TtCEkGcWlllzcn4BXPFIG5pDPTIwo4N61AAACWElEQVRIx7WW2ZaqMBBFiyGoQAREoAUBccr//+FNVTDhMtjYvXq/nFTUjZhUEH5AUMSHEv6CnAkmRAN/wFZU+VkUq76Fo8lkedxKcKC5eJ73ACSrZdqihiCuYAT3JBEM2cRCY6MIBy0YApwo8ZVCCJbDQ4gnE2cYEQlJCAM6ZTbqEAcZGBJZ+3QNfGsCcJZR5UA0d/ZCSGKmKcASI3WNAw4aB2vH4hIbhxvOm2eYc27RHS1yUOpku61JzY/HL7z4kaAL3GWdwkFMSAHA+1ZtQ5+2GLIBgBIHu25BHZLEH8PWqLs9jax36gjGFGvUHotJHQWKBKuahtln6ovr0i26Z6WWbEg9aEXagT3BVsJhTClnvckO4Zg1WAtqaGjZO9Byb5YSYKLOMMNlNXxhva+qSjWNLWbZz6hbzMsbNb/qZVyjLmz7Rmrd58tqcD5Rm2XUfW7UTSJBtXHfXCSkInN6qHtur6qdqHWfGzUEp90cp/fH04zaxT6HgdqJF275Y/VOfcqob+Kd2nKmPwiR9Y6r799JrRrJH6pPb9WRWMCebr4K136ihv/5+pE6lnGeVzdJujt9qt7L/aVqi2JevdFCo+bbF7QmO122k2VUfb5C/fkOaTGaWbWFm4dF36lz+XjK59TU585Q/WQSmeVVILGbA7hy6rCgTumsHqpBpYcRabWmLcQLVluALKjNPwI68++u66r0MXhnHgWBi6SCuPahzxDP1ezonOszkRMgpsRgDR+7GhZ2bWLKlH70ZebU15e6GarjEwfJ4/Abta/UbANGHacRKDqvWqf+B6SQ1EaH0jcUAAAAAElFTkSuQmCC") no-repeat center center;
+                display: inline-block;
+                background-size: cover;
+                width: 127px;
+                height: 46px;
+                margin-top: -8px;
+                vertical-align: middle;
+            }
+            .versionUp-span{
+                display: inline-block;
+                font-size: 38px;
+                color: #333;
+                vertical-align: middle;
+                margin-left: 15px;
+            }
+            .versionUp-content {
+                width: 90%;
+                height: 500px;
+                background: #fff;
+                text-align: center;
+                margin: 20px auto;
+                padding-top: 120px;
+                position: relative;
+            }
+
+            .versionUp-fail {
+                display:inline-block;
+                width: 64px;
+                height: 64px;
+                background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAV1BMVEUAAAC8Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji28Ji0XTCtRAAAAHXRSTlMAgYV9B3gqiQtlHiR0Og9gb1kZUkxCMGuNFD9GNo180EkAAANFSURBVFjDnVZXYqswEGR3JUD0Lorvf84nQfwEKhAyH4mNmdEWbYn8qASu5+8xpzx6g3LGJjNfWT0nbfpGYJuRx2eDkkRUv+Sm6Y1AxZ7oSzuLNCjQJzJ78J0ACxWucdb/jFUqBnUVMZEADOzG+hYBaFOfcprb84sjJqVORoFgouugaxBQdIfRGbv+thxH9ARAk5+fcwAaz0/YVDeNGE34v0aUXr52P77eHgQFhPF6x/wKGVfedZeAIvwg6dnZrlaJfpz0FYByuZwPCF/M6+VlpQCxFf/aPl9dBfVoUqbVCDqHZ9QA/PI2WxG5VS1TksjjpT6ZB+s8gVCn5wAQ0Gp7FY/Lj/ynTO2IFQjlWRCgjV5hpLMTE2CxPJPsMPzPTdpoB14i40iZMUCy6C16+prABFAZvUZXIC2HMYDNKwPMdRp3Awag4Q3RlArsnrMGeRb9BfIIY0Yo7caSa+ech3ZXHWj34eN4UNUzj51qEzPPHB9U22K902FyBNNSTVuFubRs4jr6TADvrMOko6D5gLZZElQiU8KCOc3NKBi+24aU8XHUEYgoulMwfLeiqNStsI3uFara8O0pskUxUe9tsbuC4fuqbSIY1B//PYx3hVzFWvOT1f8O9EbAr5BFhu8VMC74FRqJiq8vXMiFTAcxrABg+N4gmjSGFAzfn0Z9kcwjpyhARzLclNRFYhL4Epr2CShgEap2AdTpScfjMP9OIeXIUxUJoCHIx3UiDCnkHGq2TyUZ4idKOqywHQ2FFcizwPnDke3AXiOB8p+mujn8/stX+OwKnceDhpm2HuKHFXqCLTBY2M5XN/xOYSmQOv9oY8Ns+CcFuVg9+bsJpvI6XJVPim9fe4T5c51skAfGe8dR8x2FeboOtpaZbf66YMRi9VRWvbJLIVJ3NvpxQLsrznjSYyOelutnMIEgU2fNW95Mdso8i2b1ez5MzsLBTaKDMKtuGVy2H5HWCDgyf3nj87aWN4bvyw2K7tb8gQCgDDdRpUBbGuRP6ojbfLOVAJBvlZ+urAds73PVKSMU6slZrweu6cX0vL3JXYLk8MkXLVN18Vhz0CAdvWfkNfiAjdn6n5CWgix6M3TRK7C87EXDiXgh+jEOnv0P9fsmiQAof5wAAAAASUVORK5CYII=") no-repeat;
+            }
+
+            .versionUp-p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            .versionUp-a {
+                font-size: 16px;
+                line-height: 30px;
+                text-decoration: none;
+                color: #45B34B;
+            }
+            .versionUp-a:link,.versionUp-a:visited{
+                color: #45B34B;
+            }
+            .versionUp-a:hover{
+                color: #12b7f5;
+            }
+        </style>
+        <div class='versionUp-container'>
+            <div class="versionUp-header">
+                <span class="versionUp-logo"></span>
+                <span class="versionUp-span">微贷作业管理平台</span>
+            </div>
+            <div class="versionUp-content">
+                <span class="versionUp-fail"></span>
+                <p class="versionUp-p">助贷宝作业平台不支持你的浏览器</p>
+                <p class="versionUp-p">请使用浏览器Chrome或IE9及以上版本</p>
+                <a class="versionUp-a" href="http://www.google.cn/chrome/browser/desktop/index.html">下载链接:http://www.google.cn/chrome/browser/desktop/index.html</a>
+            </div>
+        </div>
+    <![endif]-->
+</body>
+
+</html>

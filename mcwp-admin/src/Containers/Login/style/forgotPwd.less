@@ -1,0 +1,86 @@
+@import "../../../Assets/Style/themes/default.less";
+.forgot-content {
+    height: 100%;
+    background-color: #fff;
+    .forgot-form {
+        position: relative;
+        margin: 64px auto;
+        width: 540px;
+        overflow: hidden;
+        .forgot-form-title {
+            width: 100%;
+            font-size: 18px;
+            color: #333333;
+            text-align: center;
+        }
+        .ant-form-item-control {
+            width: 240px;
+        }
+        .ant-input {
+            height: 36px;
+        }
+        .captcha-img {
+            float: right;
+            height: 36px;
+            width: 104px;
+            cursor: pointer;
+        }
+        .login-error {
+            .font(@font-size12; @font-weight300);
+            color: @error-warn-color;
+            text-align: center;
+        }
+    }
+    .send-email {
+        margin: 64px auto;
+        .logo {
+            margin: auto;
+            width: 64px;
+            height: 64px;
+            background: url("@{img-three-level-path}/emailPromt.png") no-repeat;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+        .title {
+            margin: 24px 0 10px 0;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+        .text {
+            line-height: 26px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            .mail-content {
+                text-align: left;
+                display: inline-block;
+            }
+            .mail-focus {
+                color: #5292fc;
+            }
+        }
+        .goto-mailbox {
+            margin-top: 20px;
+            .ant-btn {
+                margin-right: 20px;
+            }
+        }
+        .complete-button {
+            display: block;
+            margin: 40px auto;
+            width: 120px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            font-size: 16px;
+            color: #5292fc;
+            background-color: #f1f1f1;
+            border-radius: 6px;
+        } 
+        .complete-button:hover {
+            cursor:pointer;
+        } 
+    }
+        
+}

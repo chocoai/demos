@@ -1,0 +1,180 @@
+@import "../../../Assets/Style/themes/default.less";
+.productItem-container {
+    display: flex;
+    position: relative;
+    background-color: #fbfbfb;
+    // margin-bottom: 20px;
+    padding: 10px 0 10px 10px;
+    &:nth-of-type(even) {
+        background-color: #fff;
+    }
+    &:hover {
+        background-color: #eaf8fe;
+    }
+    .credit-word{
+      position: absolute;
+      color: #fff;
+      text-align: center;
+      z-index: 100;
+      width: 60px;
+      height: 24px;
+      line-height: 24px;
+      border-bottom-right-radius:4px;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+  .product-img {
+      width: 192px;
+      height: 128px;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .product-banner {
+      width: 192px;
+      height: 128px;
+      cursor: pointer;
+      position: relative;
+  }
+  .product-ad {
+      // background-color: #02527c;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      top:50%;
+      left:50%;
+      width:80%;
+      transform:translate(-50%,-50%);
+      text-align: center;
+      word-break: break-word;
+      padding: 5px;
+  }
+  .product-content {
+      margin-left: 20px;
+      margin-top: 5px;
+
+  }
+  .product-title {
+      font-size: 16px;
+      color: @color333;
+  }
+  .product-profit {
+      margin-top: 10px;
+  }
+  .product-profit-number {
+      font-size: 22px;
+      color: @colorfc5b5e;
+      font-weight: 500;
+  }
+  .ten-thousand {
+      font-size: 12px;
+      color: @colorfc5b5e;
+  }
+  .product-cycle {
+      margin-top: 6px;
+  }
+  .product-money, .product-month {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 16px;
+      color: @color222;
+  }
+  .product-describe {
+      font-size: 12px;
+  }
+  .product-month {
+      margin-left: 24px;
+  }
+  .product-ways {
+    margin-top: 8px;
+    color: #666;
+  }
+  .product-way {
+      display: inline-block;
+      margin-right: 16px;
+      position: relative;
+      cursor: pointer;
+      .product-detail {
+          position: absolute;
+          background: url("@{img-three-level-path}/product_bg_position.png") no-repeat center center;
+          left: -58px;
+          top: -110px;
+          width: 208px;
+          height: 108px;
+          display: none;
+          padding: 0 22px 0;
+          justify-content:center;
+          align-items:center;
+          }
+      .product-word {
+          color: #fff;
+          line-height: 20px;
+          text-align: left;
+          padding-bottom: 10px;
+      }
+      &:hover .product-detail {
+          display: flex;
+      }
+      .QR-img {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 5px;
+      }
+  }
+  .qr-info {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 30px;
+      height:30px;
+  }
+  .url-input{
+      border:1px solid #d9d9d9;
+      font-size: 14px;
+      width:120px;
+      height:30px;
+      border-radius:4px;
+      // border-top-left-radius:4px;
+      // border-bottom-left-radius:4px;
+      display:inline-block;
+  }
+  .product-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+      vertical-align: middle;
+  }
+  .product-way-describe {
+      font-size: 12px;
+      vertical-align: middle;
+  }
+  .product-operate {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      li {
+          margin-left: 20px;
+      }
+      li:hover {
+          cursor: pointer;
+      }
+
+  }
+}
+.copy, .edit, .publish, .delete, .callOff {
+    display: inline-block;
+}
+.copy, .edit, .publish, .callOff {
+    color: #5292fc;
+}
+.delete {
+    color: #f33333;
+}
+
+.ant-confirm .ant-confirm-btns button + button {
+    margin-right: 10px;
+    float: left;
+}
+
+.ant-confirm-body {
+     word-break: break-all;
+}

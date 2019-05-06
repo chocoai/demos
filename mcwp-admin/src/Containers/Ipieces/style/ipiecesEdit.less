@@ -1,0 +1,318 @@
+@import "../../../Assets/Style/themes/default.less";
+.ipieces-edit-container {
+    .second-tabs();
+    .result-container {
+        border: 1px dotted #666;
+        padding: 10px;
+        margin:  10px 0;
+    }
+    .ipieces-edit-content {
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 30px;
+        .ant-tabs-bar {
+            border-bottom: transparent;
+            margin-bottom: 20px;
+            border: none;
+        }
+    }
+
+    .result-content {
+        color: #ff4f02;
+        line-height: 34px;
+        // cursor: pointer;
+        font-size: 14px;
+    }
+    // //切换tab样式
+    // .ant-tabs-nav .ant-tabs-tab {
+    //     margin-right: 0;
+    //     background-color: #f4f4f4;
+    //     color: #000;
+    //     transition: none;
+    //     padding: 8px 10px;
+    // }
+    // .ant-tabs-nav .ant-tabs-tab-active {
+    //     background-color: #7b8292;
+    //     color: #fff;
+    // }
+    // .ant-tabs-ink-bar {
+    //     background-color: transparent;
+    // }
+    .submit {
+        position: relative;
+        left: 32%;
+        top:20px;
+    }
+    .reject {
+        position: relative;
+        left: 35%;
+        background-color: #eee;
+        border: #eee;
+        color: #f82335;
+        top:20px;
+    }
+    .save {
+        position: relative;
+        left: 38%;
+        background-color: #eee;
+        border: #eee;
+        color: #333;
+        top:20px;
+    }
+    //录音播放
+    // .audio-item {
+    //     position: fixed;
+    //     right: 10px;
+    //     bottom: 180px;
+    //     width: 200px;
+    //     height: 40px;
+    //     border-radius: 4px;
+    //     background-color: #fff;
+    //     box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    //     padding: 8px 10px;
+    //     .audio-item-title {
+    //         font-size: 12px;
+    //         color: #666;
+    //         line-height: 1;
+    //         padding-bottom: 6px;
+    //     }
+    //     .audio-item-bar {
+    //         position: relative;
+    //         width: 180px;
+    //         height: 7px;
+    //         background-color: #eee;
+    //         vertical-align: 2px;
+    //         border-radius: 7px;
+    //         cursor: pointer;
+    //     }
+    //     .audio-item-play, .audio-item-stop {
+    //         padding-right: 10px;
+    //         cursor: pointer;
+    //         font-weight: bold;
+    //         user-select: none;
+    //     }
+    //     .audio-item-now {
+    //         position: absolute;
+    //         left: 0;
+    //         display: inline-block;
+    //         height: 7px;
+    //         border-radius: 7px;
+    //         width: 0;
+    //         background: @color-369fff;
+    //     }
+    //     .audio-item-now::after {
+    //         content: '';
+    //         position: absolute;
+    //         top: -50%;
+    //         right: -7px;
+    //         // width: 14px;
+    //         // height: 14px;
+    //         background-color: @color-369fff;
+    //         // border-radius: 50%;
+    //     }
+    //     .audio-item-start, .audio-item-end {
+    //         padding: 0 4px;
+    //     }
+    // }
+    // .audio {
+    //   display: flex;
+    // //   justify-content: space-between;
+    //   align-items: center;
+    //   width: 474px;
+    // //   margin: 0 20px 16px 0;
+    //   margin-bottom: 16px;
+    //   border: 1px dotted #ccc;
+    //   padding: 8px 16px;
+    //   border-radius: 6px;
+    // }
+
+    // .audio-title {
+    //     font-size: 14px;
+    //     font-weight: bold;
+    //     padding-right: 10px;
+    // }
+    // .audio-bar {
+    //   position: relative;
+    //   width: 320px;
+    //   height: 7px;
+    //   background-color: #eee;
+    //   vertical-align: 2px;
+    //   border-radius: 7px;
+    //   cursor: pointer;
+    // }
+    // .audio-play, .audio-stop, .audioPre, .audio-next {
+    //     padding-right: 10px;
+    //     cursor: pointer;
+    //     font-weight: bold;
+    //     user-select: none;
+    // }
+    // .now {
+    //   position: absolute;
+    //   left: 0;
+    //   display: inline-block;
+    //   height: 7px;
+    //   border-radius: 7px;
+    //   width: 0;
+    //   background: #71b352;
+    // }
+
+    // .now::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: -50%;
+    //   right: -7px;
+    //   width: 14px;
+    //   height: 14px;
+    //   background-color: #71b352;
+    //   border-radius: 50%;
+    // }
+    // .start, .end {
+    //     padding: 0 4px;
+    // }
+    // .start {
+    //     padding-left: 10px;
+    // }
+    // .finance-tabs {
+    //     margin-bottom: 60px;
+    //     min-width: 998px;
+    // }
+    // .finance-tabs .ant-tabs-tab {
+    //     color: #555;
+    //     font-size: 14px;
+    //     background-color: transparent;
+    // }
+
+    // .finance-tabs .ant-tabs-tab-active {
+    //     color: #333;
+    //     border-bottom: 3px solid #71b352;
+    //     font-weight: bold;
+    // }
+    // .finance-tabs .ant-tabs-bar {
+    //     margin-bottom: 20px;
+    // }
+    // .finance-tabs .ant-tabs-tab {
+    //     padding: 8px 12px;
+    // }
+
+    .finance-form {
+        position: relative;
+    }
+    .finance-detail {
+        position: absolute;
+        left: 880px;
+        top: 10px;
+        background: transparent;
+        color: #5292fc;
+        width: 88px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        border: none;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .ant-input-group-wrapper {
+        width: 100%;
+    }
+    // 黑名单提示
+    .ipieces-cust-type {
+        background: url("@{img-three-level-path}/icon_prompt.png") no-repeat;
+        padding-left: 25px;
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .approval-p {
+        margin-bottom: 10px;
+    }
+    .approval-info {
+        background: url("@{img-three-level-path}/icon_approval-record.png") no-repeat left center ;
+        padding-left: 20px;
+        color: #369fff;
+        line-height: 16px;
+        font-size: 16px;
+    }
+    .result-container {
+        font-size: 14px;
+        font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+        .result-final-reject {
+            font-size: 16px;
+            color: #f82335;
+        }
+        .result-final-pass {
+            font-size: 16px;
+            color: #43b549;
+        }
+        .result-content-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .result-content {
+            // display: inline-block;
+            color: #ff4f02;
+            line-height: 34px;
+            cursor: pointer;
+        }
+        .result-show {
+            display: flex;
+            line-height: 40px;
+            font-weight: bold;
+        }
+        .result-type {
+            width: 300px;
+            font-family:  "Microsoft YaHei";
+            font-size: 14px;
+            color:#333;
+        }
+        .result-reason {
+            flex: 1;
+
+        }
+        .view-comment {
+            color: #369bff;
+            margin-left: 10px;
+        }
+        .credit-on-img {
+            position: relative;
+            top: 3px;
+            left: 10px;
+        }
+    }
+}
+//对话框样式
+.edit-ipieces-submit .ant-modal-body {
+    padding: 50px;
+    text-align: center;
+}
+.confirm-diff-modal{
+    font-size: 14px;
+    .tip-p {
+        font: 16px;
+        color: #333;
+        line-height: 40px;
+    }
+    .secure-title{
+        padding-left: 20px;
+    }
+    .ant-modal-body {
+        max-height: 370px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .ant-modal-header {
+        background: #f7f7f7;
+    }
+}
+.loanInfo-modal{
+    font-size: 14px;
+    .ant-modal-body {
+        max-height: 370px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .ant-modal-header {
+        background: #f7f7f7;
+    }
+}

@@ -1,0 +1,103 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.marketShare-container{
+    padding: 0;
+    .product-nodata {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        width:100%;
+        height:100%;
+        background: #fff;
+        height: 500px;
+        background: url('@{img-three-level-path}/nodata-bg.png') no-repeat center 40px;
+        .product-nodata-img{
+            width: 200px;
+            height: 150px;
+        }
+    }
+    .common-btn a{
+        color: #fff
+    }
+    .marketShare-content{
+        padding-top: 20px;
+    }
+    .share-tabs {
+        .ant-menu-item {
+            padding: 0 16px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .ant-menu-item-selected {
+        color: #333333;
+        border-bottom: 2px solid #369fff;
+        font-size: 14px;
+        font-weight: 600;
+        }
+    }
+    // .reports-search-section{
+    //     padding-left: 30px;
+    // }
+    // .ant-select-selection,.marketShare-container{
+    //     height: 36px;
+    // }
+    // .list-down-wrap{
+    //    position: relative;
+    //    height: 36px!important;
+    // }
+    // .list-download{
+    //     width:48px;
+    //     height: 16px!important;
+    //     cursor: pointer;
+    //     position: absolute;
+    //     top: 50%!important;
+    //     left: 50%!important;
+    //     margin-top: -8px!important;
+    //     margin-left: -24px!important;
+    // }
+    .data-sum-content{
+        width: 100%;
+        padding: 0px 20px 20px;
+        .data-sum-date{
+            height: 50px;
+            background: #fbfbfb;
+            line-height: 50px;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        .data-sum-warp{
+            display: flex;
+            .data-sum-left{
+                p{
+                    width: 150px;
+                    line-height: 50px;
+                    padding-left: 10px;
+                    font-weight: bold;
+                    margin-right: 2px;
+                    &:nth-of-type(even){
+                        background: #fbfbfb;
+                    }
+                } 
+                .data-sum-p-4{
+                    height: 200px;
+                    line-height: 200px;
+                }  
+                .data-sum-p-2{
+                    height: 100px;
+                    line-height: 100px;
+                }  
+            }
+            .data-sum-value{
+                p{
+                    width: 755px;
+                    line-height: 50px;
+                    padding-left: 10px;
+                    &:nth-of-type(even){
+                        background: #fbfbfb;
+                    }
+                }  
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+@import url(common/base.less);
+
+.product-desc {
+    position: relative;
+    width: 1080rem/@font-size-base;
+    margin: 0 auto;
+    padding-bottom: 120rem/@font-size-base;
+    .product-banner {
+        position: relative;
+        width: 1080rem/@font-size-base;
+        height: 712rem/@font-size-base;
+        .product-ad {
+            position: relative;
+            background-color: #02527c;
+            color: #fff;
+            line-height: 1.5;
+            padding: 30rem/@font-size-base 32rem/@font-size-base;
+            text-align: center;
+            width: 840rem/@font-size-base;
+            font-size: 80rem/@font-size-base;
+        }
+    }
+    .product-title {
+        position: relative;
+        font-size: 56rem/@font-size-base;
+        color: #333;
+        margin: 30rem/@font-size-base 0 0 64rem/@font-size-base;
+    }
+    .product-loan {
+        position: relative;
+        margin: 80rem/@font-size-base 0 0;
+        width: 100%;
+        min-height: 80rem/@font-size-base;
+        overflow: hidden;
+        &:after {
+            content: ".";
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+    }
+    .loan-limit {
+        float: left;
+        margin-left: 120rem/@font-size-base;
+        width: 280rem/@font-size-base;
+        padding-left: 40rem/@font-size-base;
+        font-size: 36rem/@font-size-base;
+        .limit-title {
+            color: #666;
+        }
+        .limit-max {
+            color: #333;
+            margin-top: 24rem/@font-size-base;
+            line-height: 60rem/@font-size-base;
+            height: 60rem/@font-size-base;
+            span {
+                color: #f64349;
+                font-size: 60rem/@font-size-base;
+            }
+        }
+    }
+    .day-rate {
+        float: left;
+        left: 48rem/@font-size-base;
+        font-size: 36rem/@font-size-base;
+        .rate-title {
+            color: #666;
+        }
+        .rate-count {
+            color: #333;
+            margin-top: 24rem/@font-size-base;
+            line-height: 60rem/@font-size-base;
+            height: 60rem/@font-size-base;
+            vertical-align: text-bottom;
+            span {
+                color: #f64349;
+                font-size: 60rem/@font-size-base;
+            }
+        }
+    }
+    .loan-cycle {
+        position: absolute;
+        right: 120rem/@font-size-base;
+        font-size: 36rem/@font-size-base;
+        width: 280rem/@font-size-base;
+        padding-left: 40rem/@font-size-base;
+        .cycle-title {
+            color: #666;
+        }
+        .cycle-max {
+            color: #333;
+            margin-top: 24rem/@font-size-base;
+            line-height: 60rem/@font-size-base;
+            height: 60rem/@font-size-base;
+            span {
+                color: #f64349;
+                font-size: 60rem/@font-size-base;
+            }
+        }
+    }
+    .loan-introduce {
+        position: relative;
+        border: 4rem/@font-size-base dashed #b7b7b7;
+        border-radius: 40rem/@font-size-base; 
+        margin: 120rem/@font-size-base 40rem/@font-size-base 0 40rem/@font-size-base; 
+        padding: 80rem/@font-size-base 64rem/@font-size-base;
+        overflow: hidden;
+        &:after {
+            content: ".";
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+        .icon {
+            float: left;
+            width: 40rem/@font-size-base;
+            height: 40rem/@font-size-base;
+            margin-top: 10rem/@font-size-base;
+            vertical-align: bottom;
+            &.repay-icon {
+                background: url(../images/product_icon_repayment.png) no-repeat center center;
+                background-size: cover;
+            }
+            &.interest-icon {
+                background: url(../images/product_icon_Interest.png) no-repeat center center;
+                background-size: cover;
+            }
+            &.credit-icon {
+                background: url(../images/product_icon_credittype.png) no-repeat center center;
+                background-size: cover;
+            }
+        }
+        .introduce-title {
+            float: left;
+            margin-left: 16rem/@font-size-base;
+            font-size: 40rem/@font-size-base;
+            color: #f64349;
+            vertical-align: bottom;
+        }
+        .introduce-content {
+            float: right;
+            width: 600rem/@font-size-base;
+            font-size: 40rem/@font-size-base;
+            color: #333;
+            text-align: left;
+        }
+        .repay-mode {
+            position: relative;
+        }
+        .interest-mode {
+            position: relative;
+            margin-top: 80rem/@font-size-base;
+        }
+        .credit-type {
+            position: relative;
+            margin-top: 80rem/@font-size-base;
+        }
+    }
+
+    .load-lending, .load-qual, .load-people {
+        position: relative;
+        border: 4rem/@font-size-base dashed #b7b7b7;
+        border-radius: 40rem/@font-size-base; 
+        margin: 112rem/@font-size-base 40rem/@font-size-base 0 40rem/@font-size-base; 
+        padding: 0rem/@font-size-base 80rem/@font-size-base 80rem/@font-size-base 80rem/@font-size-base;
+        &:before {
+            content: attr(data-title);
+            position: absolute;
+            top: -32rem/@font-size-base;
+            left: 80rem/@font-size-base;
+            display: block;
+            background: url(../images/product_bg_title.png) no-repeat center center;
+            background-size: cover;
+            width: 342rem/@font-size-base;
+            height: 78rem/@font-size-base;
+            line-height: 78rem/@font-size-base;
+            text-align: center;
+            font-size: 42rem/@font-size-base;
+            color: #fff;
+        }
+    }
+    .load-reminder {
+        position: relative;
+        border: 4rem/@font-size-base dashed #b7b7b7;
+        border-radius: 40rem/@font-size-base; 
+        margin: 112rem/@font-size-base 40rem/@font-size-base 0 40rem/@font-size-base; 
+        padding: 0rem/@font-size-base 80rem/@font-size-base 80rem/@font-size-base 80rem/@font-size-base;
+        &:before {
+            content: attr(data-title);
+            position: absolute;
+            top: -32rem/@font-size-base;
+            left: 80rem/@font-size-base;
+            display: block;
+            background-color: #fff;
+            width: 220rem/@font-size-base;
+            height: 60rem/@font-size-base;
+            line-height: 60rem/@font-size-base;
+            text-align: center;
+            font-size: 40rem/@font-size-base;
+            font-weight: bold;
+            color: #ef5853;
+        }
+    }
+    .lending-content, .qual-content, .people-content {
+        margin-top: 112rem/@font-size-base;
+        font-size: 40rem/@font-size-base;
+        color: #333;
+        line-height: 1.8;
+    }
+    .apply-btn {
+        position: relative;
+        margin: 160rem/@font-size-base auto 0 auto;
+        background: url(../images/product_btn_application.png) no-repeat center center;
+        background-size: cover;
+        width: 648rem/@font-size-base;
+        height: 152rem/@font-size-base;
+        font-size: 72rem/@font-size-base;
+        color: #fff;
+        line-height: 152rem/@font-size-base;
+        text-align: center;
+    }
+}

@@ -1,0 +1,66 @@
+@import "../../../Assets/Style/themes/default.less";
+.trial-report-container {
+    position: relative;
+    .trial-report-h2 {
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+    }
+    .audit-result {
+        padding-left: 72px;
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+        text-align: left;
+        .audit-result-label {
+            position: absolute;
+            left: 0;
+        }
+    }
+    .trial-customer-info {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #333;
+        .customer-info {
+            margin-top: 10px;
+            span {
+                width: 50%;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .first-audit-result {
+        margin-top: 10px;
+        color: #333;
+        .trial-report-h2 {
+            margin-bottom: 15px;
+        }
+        .rule-select {
+            margin-bottom: 16px;
+        }
+        .rule-option {
+            position: relative;
+            text-indent: 20px;
+            margin-bottom: 16px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #9acfff;
+                left: 0;
+                top: 7px;
+            }
+        }
+    }
+    .case-desp {
+        padding-left: 96px;
+        color: #333;
+        span {
+            position: absolute;
+            left: 0;
+        }
+    }
+}

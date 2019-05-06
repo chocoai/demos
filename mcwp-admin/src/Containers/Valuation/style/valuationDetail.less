@@ -1,0 +1,86 @@
+@import "../../../Assets/Style/themes/default.less";
+
+.valuation-detail {
+  margin-top: 10px;
+  padding: 20px 30px;
+  background-color: #fff;
+  min-height: 500px;
+  .valuation-detail-content {
+    padding: 0px 10px;
+    .title {
+      padding: 10px 0px;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 13px;
+    }
+    .remark-item {
+      display: flex;
+      width: 100%;
+      position: relative;
+    }
+    // 文本框
+    .remark-name {
+      flex: 1;
+      height: 100px;
+      min-height: 100px;
+      min-width: 200px;
+      color: #333;
+      padding: 10px;
+      padding-bottom: 20px;
+      resize: none;
+      overflow: hidden;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      box-sizing: border-box;
+      // transition: .3s;
+      &:focus {
+        border-color: #49a9ee;
+        outline: 0;
+        box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+      }
+      &:hover {
+        border-color: #49a9ee;
+      }
+    }
+    .remark-title {
+      font-size: 13px;
+    }
+    .remark-count {
+      position: absolute;
+      bottom: 4px;
+      right: 10px;
+    }
+    .remark-history {
+      position: absolute;
+      bottom: -25px;
+      cursor: pointer;
+      right: 5px;
+      color: #108ee9;
+    }
+  }
+}
+
+.remake-modal {
+  width: 500px!important;
+  max-height: 400px!important;
+  font-size: 14px;
+  .ant-modal-body {
+    max-height: 370px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .time-p {
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .ant-timeline-item-tail {
+    border-left: 2px solid #e5e5e5;
+  }
+  .ant-timeline-item-head-blue {
+    border-color: #ccc;
+    background: #ccc;
+  }
+  .ant-modal-header {
+    background: #f7f7f7;
+  }
+}

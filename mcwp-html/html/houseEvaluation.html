@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请贷款</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../lib/rem/rem.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone = no" />
+    <style type="text/css">
+		body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";font-size:14px;}
+		#r-result{ width:100%;}
+	</style>
+    <link rel="stylesheet" type="text/css" href="../css/houseEvaluation.css" />
+    <!-- 网贷-房抵贷-房屋评估 -->
+</head>
+<body>
+    <div id="houseEvaluation" class="house-evaluation">
+        <div class="house-search">
+            <div id="r-result" class="weui-search-bar weui-search-bar_focusing" id="searchBar">
+                <form class="weui-search-bar__form">
+                    <div class="weui-search-bar__box">
+                        <i class="weui-icon-search"></i>
+                        <input id="suggestId" type="search" class="weui-search-bar__input" placeholder="请输入本人名下房产所在小区" required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                </form>
+                <div class="current-city"><span class="location-img"></span><span id="currentCity"></span></span>
+            </div>
+	        <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+        </div>
+        <div id="allmap" class="allmap"></div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">房屋用途</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input id="fwyt" class="weui-input" placeholder="请选择" />
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">房屋面积</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input id="bldgarea" class="weui-input" type="tel" placeholder="必输项" maxlength="8" />
+                </div>
+                <div class="weui-cell__ft">
+                    <button class="weui-unit-btn">m<sup>2</sup></button>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">联系方式</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input id="telephone" class="weui-input" type="number" pattern="[0-9]*" placeholder="必输项" maxlength="11" />
+                </div>
+            </div>
+            <div id="goAssess" class="weui-btn weui-btn_primary assess-btn">免费评估</div>
+        </div>
+    </div>
+    <script src="../js/require.js" data-main="../js/houseEvaluation.js"></script>
+</body>
+</html>

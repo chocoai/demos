@@ -1,0 +1,100 @@
+@import "../../../Assets/Style/themes/default.less";
+.editManageOther-container {
+    //单位样式
+    .ant-input-group-addon {
+        background-color: #fff;
+        border: none;
+    }
+    .ant-input-group > .ant-input:first-child {
+        border-radius: 4px;
+    }
+    .ant-form-item-label {
+        text-align: left;
+        text-indent: 10px;
+        width: 150px;
+    }
+    //去除自带样式*
+    .ant-form-item-required:before {
+        content: '';
+    }
+
+    .descript-item {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    .des-content {
+        flex: 1;
+        height: 120px;
+        min-width: 200px;
+        color: #333;
+        padding: 0 10px;
+        resize: none;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+    }
+    .des-count {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+    }
+    textarea::-webkit-input-placeholder {
+        color: #ccc;
+    }
+    .main-business {
+        padding: 20px 10px 0;
+        border: 1px dotted #ccc;
+        margin-bottom: 20px;
+        position: relative;
+        margin-right: 10px;
+    }
+
+    .ipieces-subtitle {
+        background-color: #fbfbfb;
+        font-weight: bold;
+        padding-left: 5px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .label-lines {
+        padding-right: 10px;
+        text-indent: 0;
+        display: inline-block;
+        white-space: normal;
+        line-height: 20px;
+    }
+    .label-lines:after {
+        content:':';
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+    }
+
+
+    .ipieces-delete {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px; 
+        transform: translate(50%,-50%);  
+        cursor: pointer;
+    }
+    .ipieces-add {
+        width: 100px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .ipieces-add-detail {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0093ff;
+        vertical-align: middle;
+    }
+    .ipieces-add-img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,168 @@
+@import "../../../Assets/Style/themes/default.less";
+.marketTemplate-container{
+    .qr-info{
+        position: absolute;
+        bottom: 24px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .template-img {
+    //   width: 218px;
+    //   height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .market-tpl-col {
+        margin-bottom: 10px;
+    }
+    .copy-img {
+        width: 36px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        background: url(../../../Assets/Images/icon_copy.png) no-repeat center center;
+    }
+    .preview-img {
+        width: 36px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        background: url(../../../Assets/Images/icon_preview.png) no-repeat center left;
+    }
+    .market-btn {
+        margin: 10px 20px;
+    }
+    .marketTemplate-content{
+        background-color: #fff;
+        // margin-top: 10px;
+        padding: 30px;
+    }
+    .market-tpl-img{
+        width: 100%;
+        height: 200px;
+        border-bottom: solid 1px #ccc;
+        position: relative;
+        overflow: hidden;
+    }
+    .market-tpl-img:hover .market-tpl-edit {
+        display: block;
+    }
+    .market-tpl-edit {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+        .tpl-edit {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+        }
+    }
+    .default-img{
+        position: absolute;
+        z-index: 999;
+    }
+    // .market-tpl-col{
+    //     height: 314px;
+    // }
+    .market-tpl-content{
+        width: 100%;
+        height: 104px;
+    }
+
+    .card-preview , .card-set, .card-delete{
+        color: #1c7bef;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .cursor-none {
+        cursor: n-resize!important;
+    }
+    .card-preview {
+        width: 38%;
+        background: url(../../../Assets/Images/icon_preview.png) no-repeat 10px center;
+    }
+    .card-set {
+        width: 30%;
+        background: url(../../../Assets/Images/icon_default_disable.png) no-repeat center left;
+    }
+    .card-set-false {
+        background: url(../../../Assets/Images/icon_default.png) no-repeat center left;
+    }
+    .card-delete {
+        width: 30%;
+        background: url(../../../Assets/Images/icon_disabled.png) no-repeat center left;
+    }
+    .card-delete-false {
+        background: url(../../../Assets/Images/icon_enable.png) no-repeat center left;
+    }
+    .card-default-disabled {
+        background: url(../../../Assets/Images/icon_default_disabled.png) no-repeat center left;
+        color: #ccc!important;
+        display: inline-block;
+        width: 30%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .card-set-false{
+        color: #ccc!important;
+        display: inline-block;
+        width: 30%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        cursor: n-resize;
+    }
+    .card-delete-false {
+        color: #1c7bef;
+        display: inline-block;
+        width: 30%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .markey-card-p {
+        width: 50%;
+        background-position: 20px center;
+    }
+    .card-tpl-name{
+        color: #333;
+        font-size: 14px;
+        width: 165px;
+        margin-top: 21px;
+        margin-left:10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .ant-pagination{
+        text-align: center;
+        margin: 16px 0px;
+    }
+    .ant-table-pagination{
+        display: table;
+        // margin: 16px auto !important;
+    }
+}

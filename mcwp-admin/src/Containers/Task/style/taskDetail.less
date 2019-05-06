@@ -1,0 +1,153 @@
+@import "../../../Assets/Style/themes/default.less";
+.task-detail-container {
+    .task-detail-content {
+        // background-color: #fff;
+        margin-top: 10px;
+        // padding: 40px 30px;
+    }
+    .task-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .task-detail-wrapper {
+        display: flex;
+        width: 80%;
+    }
+    .task-type {
+        display: inline-block;
+        font-size: 14px;
+        // background-color: rgba( 178, 223, 219, .1);
+        background-color: #ebf5ff;
+        margin-right: 10px;
+        // padding: 12px;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 4px;
+    }
+    .task-area {
+        display: inline-block;
+        font-size: 18px;
+        color: @color333;
+        margin-right: 8px;
+        vertical-align: top;
+        // max-width: 500px;
+        flex: 1;
+        // margin-top: 8px;
+        word-break: break-all;
+    }
+    .task-owner {
+        display: inline-block;
+        font-size: 13px;
+        padding: 4px 10px;
+        height: 30px;
+        color: @color888;
+        background-color: #ebebeb;
+        border-radius:20px;
+    }
+    .task-owner-edit {
+        cursor: pointer;
+    }
+
+    .task-schedule {
+        margin-top: 30px;
+    }
+
+    .task-schedule-item {
+        display: flex;
+        width: 80%;
+        font-size: 13px;
+        color: @color333;
+        padding-left: 10px;
+    }
+    .task-schedule-item + .task-schedule-item {
+        margin-top: 20px;
+    }
+
+    .taskdetails-icon-record {
+        vertical-align: middle;
+        padding-right: 20px;
+        width: 40px;
+        height: 20px;
+    }
+    .taskdetails-record {
+        display: inline-block;
+        vertical-align: middle;
+        word-break: break-all;
+    }
+
+    #allmap {
+        width: 80%;
+        height: 360px;
+        padding-left: 10px;
+        margin-top: 36px;
+    }
+    .BMapLabel {
+        transform: translate(-50%, -110%);
+        border-radius: 6px;
+    }
+    //此处有待优化
+    // .BMapLabel:after {
+    //     content: '';
+    //     position: absolute;
+    //     border-style: solid;
+    //     border-width: 10px;
+    //     border-color: #484745 transparent transparent;
+    //     bottom: -18px;
+    //     left: 50%;
+    // }
+
+    .task-detail-btn {
+        float: right;
+        font-size: 13px;
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+        &.task-delete {
+            color: #f33333;
+        }
+        &.task-edit {
+            color: #5292fc;
+            margin-right: 20px;
+        }
+    }
+    //编辑状态
+    .title-text {
+        // width: 500px;
+        flex: 1;
+        font-size: 18px;
+        color: #333;
+        margin: 0 8px 0 0;
+        vertical-align: top;
+        border: none;
+        border-bottom: 1px dotted #666;
+        resize: none;
+        outline: none;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        word-break: break-all;
+    }
+    .rule-button {
+        margin-top: 10px;
+    }
+    .rule-save, .rule-cancel {
+        cursor: pointer;
+        font-size: 13px;
+    }
+    .rule-save {
+        margin-left: 90px;
+        color: #5292fc;
+    }
+    .rule-cancel {
+        margin-left: 20px;
+    }
+    .ant-calendar-picker {
+        width: 100%;
+    }
+}
+.ant-modal-body {
+    padding: 50px;
+    text-align: center;
+}
